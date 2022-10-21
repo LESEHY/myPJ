@@ -14,18 +14,18 @@
 */
 
 /* 전체 글자크기 Root 셋팅! */
-html{
+html {
     font-size: 10px;
     /* 글자 rem단위 계산편의때문 */
 }
 
 /* 전체 웹폰트 일반적용! */
-body{
+body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* 중앙박스 */
-.ibx{
-    max-width: 1100px;
+.ibx {
+    max-width: 85%;
     margin: 0 auto;
 }

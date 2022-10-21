@@ -30,24 +30,32 @@ html,body{
 }
 /* 하위박스 비만들기 */
 .logoBox{
-    width: 30%;
+    width: 10%;
+}
+.searchBox{
+    width: 60%;
+    height: 30%;
 }
 .menuBox{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    width: 30%;
+    height: 30%;
 }
-
-.menuBox>*{
-    flex: 1;
+.gnbBox{
+    position: absolute;
+    
+    width: 55%;
+    height: 8%;
+    
+    top: 42px;
+    left: 16%;
 }
 
 .logo{
-   padding-top: 0;
+   padding-top: 20px;
 }
 
 .tmenu{
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 .tmenu>ul{
