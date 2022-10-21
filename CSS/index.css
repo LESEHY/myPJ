@@ -43,11 +43,11 @@ html,body{
 }
 
 .logo{
-   
+   padding-top: 0;
 }
 
 .tmenu{
-  
+  padding-top: 0;
 }
 
 .tmenu>ul{
