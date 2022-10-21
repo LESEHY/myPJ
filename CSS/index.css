@@ -4,6 +4,10 @@
 @import url(./reset.css);
 @import url(./core.css);
 
+body *{
+    outline: 1px dashed gray;
+}
+
 html,body{
     outline: 2px dotted red;
 }
@@ -21,23 +25,29 @@ html,body{
 }
 
 .top{
+    display: flex;
     height: 120px;
+}
+/* 하위박스 비만들기 */
+.logoBox{
+    width: 30%;
+}
+.menuBox{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.menuBox>*{
+    flex: 1;
 }
 
 .logo{
-    padding-top: 22px;
-    padding-left: 200px;
+   
 }
 
 .tmenu{
-    position: absolute;
-    top: 20px;
-    left: 40%;
-    transform: translateX(-50%);
-    /* x축으로 중앙이동 */
-    /* 부모는? 보이는 화면 */
-    width: 1200px;
-    /* outline: 2px dotted red; */
+  
 }
 
 .tmenu>ul{
