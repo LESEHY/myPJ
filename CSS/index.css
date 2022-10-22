@@ -3,6 +3,7 @@
 /* reset.css */
 @import url(./reset.css);
 @import url(./core.css);
+@import url(./nav.css);
 
 body *{
     outline: 1px dashed gray;
@@ -79,7 +80,7 @@ html,body{
 /* MENU, STORE 폰트 사이즈 */
 .sm>a{
     font-size: 20px;
-    padding: 5px 20px;
+    padding: 5px 0;
 }
 /* 소제목 */
 .h2t{
@@ -91,20 +92,9 @@ html,body{
     color: white ;
 }
 
-/* 메뉴바 숨김 */
-ol>li{
-    background: #2C2A29;
-    /* display: none; */
-}
 
-ol>li a{
-    color: rgba(255, 255, 255, 0.8);
-}
 
-/* 메뉴바 보임 */
-.sm:hover ol>li{
-    display: block;
-}
+
 
 
 
