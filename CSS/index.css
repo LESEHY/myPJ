@@ -43,7 +43,7 @@ html,body{
 .gnbBox{
     position: absolute;
     
-    width: 55%;
+    width: 70%;
     height: 8%;
     
     top: 42px;
@@ -61,14 +61,53 @@ html,body{
 .tmenu>ul{
     float: right;
 }
+
+.clb > li {
+    float: left;
+}
+
 /* 탑메뉴 상위 li */
 .tmenu>ul>li{
     padding: 2px 7px;
 }
+
 /* 탑메뉴 상위 a */
 .tmenu>ul>li>a{
     font-size: 1.5rem;
 }
-.clb > li {
-    float: left;
+
+/* MENU, STORE 폰트 사이즈 */
+.sm>a{
+    font-size: 20px;
+    padding: 5px 20px;
 }
+/* 소제목 */
+.h2t{
+    text-align: center;
+    font-size: 16px;
+}
+
+.h2t a{
+    color: white ;
+}
+
+/* 메뉴바 숨김 */
+ol>li{
+    background: #2C2A29;
+    /* display: none; */
+}
+
+ol>li a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 메뉴바 보임 */
+.sm:hover ol>li{
+    display: block;
+}
+
+
+
+
+
+
