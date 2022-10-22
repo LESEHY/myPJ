@@ -5,11 +5,12 @@
 @import url(./core.css);
 @import url(./nav.css);
 
-body *{
+body * {
     outline: 1px dashed gray;
 }
 
-html,body{
+html,
+body {
     outline: 2px dotted red;
 }
 
@@ -18,80 +19,96 @@ html,body{
     background-size: 100% 500px;
 } */
 
-#top{
+#top {
     background: #f6f5ef;
     border-bottom: 1px solid #e5e5e5;
     border-top: 2px solid #000;
     overflow: hidden;
 }
 
-.top{
+.top {
     display: flex;
     height: 120px;
 }
+
 /* 하위박스 비만들기 */
-.logoBox{
+.logoBox {
     width: 10%;
 }
-.searchBox{
+
+.searchBox {
     width: 60%;
     height: 60%;
 }
-.menuBox{
+
+.sh {
+    position: absolute;
+    top: 20px;
+    width: 50.5%;
+}
+
+.menuBox {
     width: 30%;
     height: 50%;
 }
-.gnbBox{
+
+.gnbBox {
+    display: flex;
     position: absolute;
-    
+
     width: 51%;
-    
+
     top: 60px;
     left: 16%;
+    box-sizing: border-box;
 }
 
-.logo{
-   padding-top: 20px;
+.storeBOX {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 60px;
+
 }
 
-.tmenu{
-  padding-top: 10px;
+.storeBOX img {
+    width: 30px;
+    height: 30px;
 }
 
-.tmenu>ul{
+.logo {
+    padding-top: 20px;
+}
+
+.tmenu {
+    padding-top: 10px;
+}
+
+.tmenu>ul {
     float: right;
 }
 
-.clb > li {
+.clb>li {
     float: left;
 }
 
 /* 탑메뉴 상위 li */
-.tmenu>ul>li{
+.tmenu>ul>li {
     padding: 2px 7px;
 }
 
 /* 탑메뉴 상위 a */
-.tmenu>ul>li>a{
+.tmenu>ul>li>a {
     font-size: 1.5rem;
 }
 
 /* MENU, STORE 폰트 사이즈 */
-.sm>a{
+.sm>a {
     font-size: 20px;
 }
+
 /* 소제목 */
-.h2t a{
-    color: white ;
+.h2t a {
+    color: white;
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
