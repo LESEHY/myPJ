@@ -35,19 +35,18 @@ html,body{
 }
 .searchBox{
     width: 60%;
-    height: 30%;
+    height: 60%;
 }
 .menuBox{
     width: 30%;
-    height: 30%;
+    height: 50%;
 }
 .gnbBox{
     position: absolute;
     
-    width: 70%;
-    height: 8%;
+    width: 51%;
     
-    top: 42px;
+    top: 60px;
     left: 16%;
 }
 
@@ -80,16 +79,11 @@ html,body{
 /* MENU, STORE 폰트 사이즈 */
 .sm>a{
     font-size: 20px;
-    padding: 5px 0;
 }
 /* 소제목 */
-.h2t{
-    text-align: center;
-    font-size: 16px;
-}
-
 .h2t a{
     color: white ;
+    font-size: 16px;
 }
 
 

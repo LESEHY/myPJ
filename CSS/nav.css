@@ -19,13 +19,6 @@
 
   }
 
-  /* 가상요소로 clear설정하기 -> flex는 불필요!
-    .gnb ul::after {
-      content: '';
-      display: block;
-      clear: both;
-    } */
-
   /* 상위li 리스트요소 */
   .gnb>ul>li {
     width: 200px;
@@ -37,7 +30,7 @@
   }
 
   /* 상위 li.on에 가상요소로 하위메뉴 100%배경바 만들기 */
-  .gnb>ul>li.on::after {
+  .gnb>ul>li.sm::after {
     content: '';
     display: block;
     position: absolute;
@@ -46,17 +39,17 @@
     width: 100%;
     height: 0;
     /* 65px; */
-    background-color: darkblue;
+    background-color:#2C2A29;
     z-index: -1;
     /* .smenu 보다 아래! */
 
     /* smenu와 동일 */
-    transition: height .4s ease-out;
+    /* transition: height .4s ease-out; */
   }
 
-  /* 상위 li.on에 마우스 오버시*/
-  .gnb>ul>li.on:hover::after {
-    height: 65px;
+  /* GNB 오버 시 뒤에 추가 색 보임*/
+  .gnb>ul>li.sm:hover::after {
+    height: 165px;
   }
 
   /* li사이에 구분선 넣기 */
@@ -82,14 +75,14 @@
     height: 100%;
 
     font-size: 17px;
-    line-height: 40px;
+    line-height: 60px;
     color: #000;
     text-decoration: none;
     /* 트랜지션:속시이지 */
     transition: .3s;
   }
 
-  /* 부모li에 마우스 오버시 상위메뉴 a요소 변경 */
+  /* MENU, STORE 색깔 변경 */
   .gnb>ul>li:hover>a {
     color: #669900;
     background-color: #2C2A29
@@ -101,7 +94,7 @@
     /* 부모자격 */
   }
 
-  /* 가상요소로 밑줄넣기 */
+  /*  MENU, STORE 가상요소로 밑줄넣기 */
   .gnb>ul>li>a>span::after {
     content: '';
     display: block;
@@ -117,7 +110,7 @@
     transition: width .2s ease-out;
   }
 
-  /* 상위메뉴 오버시 가상요소 밑줄애니 */
+  /* MENU, STORE 오버시 가상요소 밑줄애니 */
   .gnb>ul>li:hover>a>span::after {
     width: 100%;
     /* 오버시에 기다리는 시간 0.4초 */
@@ -132,32 +125,26 @@
   /* 서브메뉴 */
   .smenu {
     position: absolute;
-    /* width: 200px;  */
 
     /* 메뉴 숨기기 높이값 0, overflow:hidden*/
+    left: 0;
     height: 0;
     overflow: hidden;
     /* 주의: 숨기는 박스에 상하패딩이 있으면 완전히 숨길 수 없다! */
 
-
     /* 상위메뉴 오버시 배경색과 동일 */
     background-color: #2C2A29;
-    border-radius: 0 0 5px 5px;
-
-    transition: height .4s ease-out;
   }
 
-  /* 상위메뉴 li 오버시 서브메뉴 보이기 */
+  /* GNB 오버 시 메뉴 보임 */
   .gnb>ul>li:hover .smenu {
-    height: 65px;
+    height: 165px;
     /* 모든 하위메뉴 공통! */
   }
 
   /* 서브메뉴 ol */
-  .smenu ol {
-    /* 직계 li만 옆으로 */
-    display: flex;
-    padding: 15px;
+  .h2t{
+
   }
 
   /* 서브메뉴 a */
@@ -166,7 +153,6 @@
     display: block;
 
     color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
     font-size: 14px;
     line-height: 35px;
 
@@ -174,23 +160,10 @@
     margin: 0 7px;
 
     /* 트랜지션 */
-    transition: .2s;
+    /* transition: .2s; */
   }
 
-  /* 서브메뉴 오버시 */
+  /* 서브메뉴 오버시 밑줄*/
   .smenu a:hover {
-    background-color: lightskyblue;
-    color: darkblue;
-    border-radius: 50px;
-  }
-
-  /* 본문내용 */
-  .cont {
-    position: relative;
-    /* 하위 박스가 포지션이 있으면 나중에 그린박스가
-      윗박스보다 위에 올라온다! 따라서 메뉴박스가 위에 오도록
-      z-index를 상위박스에서 높여줘야 하위메뉴가 밑에 깔리지 않는다! */
-    background-color: #fdfccf;
-    text-align: center;
-    line-height: 50;
+    text-decoration: underline;
   }
