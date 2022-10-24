@@ -35,13 +35,8 @@ body {
     
 }
 
-.topmenu{
-    display: flex;
-}
-
 /* 하위박스 비만들기 */
 .logoBox {
-    display: flex;
     width: 10%;
     
 }
@@ -67,7 +62,6 @@ body {
 }
 
 .gnbBox {
-    flex: 1;
     box-sizing: border-box;
 }
 
@@ -80,11 +74,7 @@ body {
 }
 
 .tmenu>ul {
-    float: right;
-}
-
-.clb>li {
-    float: left;
+    display: flex;
 }
 
 /* 탑메뉴 상위 li */
