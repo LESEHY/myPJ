@@ -35,54 +35,40 @@ body {
     
 }
 
+.topmenu{
+    display: flex;
+}
+
 /* 하위박스 비만들기 */
 .logoBox {
+    display: flex;
     width: 10%;
     
 }
 
 .searchBox {
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 30%;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .sh {
-    position: absolute;
-    top: 20px;
-    width: 50.5%;
+    width: 50%;
     height: 20px;
     border-radius: 2px;
     text-align: center;
-    display: inline-block;
 }
 
 .menuBox {
-    width: 30%;
+    width: 20%;
     height: 50%;
+    
 }
 
 .gnbBox {
-    display: flex;
-    position: absolute;
-
-    width: 51%;
-
-    top: 60px;
-    left: 16%;
+    flex: 1;
     box-sizing: border-box;
-}
-
-.storeBOX {
-    display: flex;
-    position: absolute;
-    right: 10%;
-    top: 60px;
-
-}
-
-.storeBOX img {
-    width: 30px;
-    height: 30px;
 }
 
 .logo {
