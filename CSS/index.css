@@ -44,7 +44,6 @@ body {
 
 .searchBox {
     width: 70%;
-    height: 30%;
     padding-top: 15px;
     text-align: center;
 }
@@ -58,19 +57,18 @@ body {
 
 .menuBox {
     width: 20%;
-    height: 50%;
     
 }
 
 .gnbBox {
-    width: 100%;
-    
-    text-align: center;
+    margin: 0 auto;
+
     box-sizing: border-box;
 }
 
 .logo {
-    padding-top: 20px;
+    position: absolute;
+    top: 15px;
 }
 
 .tmenu {
