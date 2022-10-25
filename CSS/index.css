@@ -38,8 +38,8 @@ body {
 }
 
 .logoBox {
-
     width: 20%;
+    height: 0;
 }
 
 .searchBox {
@@ -56,19 +56,21 @@ body {
 }
 
 .menuBox {
-
     width: 20%;
 
 }
 
 .gnbBox {
     position: absolute;
-    box-sizing: border-box;
+    top: 62px;
+    margin-left: 17.7%;
+  
 }
 
 
 .logo {
     top: 15px;
+    padding-top: 20px;
     margin-left: 50px;
 }
 
