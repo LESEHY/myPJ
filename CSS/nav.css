@@ -1,7 +1,7 @@
 /* GNB메뉴박스 */
 .gnb {
     position: relative;
-    z-index: 1;
+    z-index: 999;
     /* 포지션이 있어야 z-index적용됨!
       GNB 하위메뉴가 위에 오도록 z-index를 높인다! */
     background-color: #f6f5ef;

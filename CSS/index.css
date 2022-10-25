@@ -7,13 +7,13 @@
 
 body * {
     outline: 1px dashed gray;
-    
+
 }
 
 html,
 body {
     outline: 2px dotted red;
-    
+
 }
 
 /* body{
@@ -26,49 +26,50 @@ body {
     border-bottom: 1px solid #e5e5e5;
     border-top: 2px solid #000;
     overflow: hidden;
-    
+
 }
 
 .top {
+
     display: flex;
     flex-wrap: wrap;
     height: 120px;
-    
+
 }
 
-/* 하위박스 비만들기 */
 .logoBox {
-    width: 10%;
-    
+
+    width: 20%;
 }
 
 .searchBox {
-    width: 70%;
+    width: 60%;
     padding-top: 15px;
     text-align: center;
 }
 
 .sh {
-    width: 50%;
+    width: 80%;
     height: 20px;
     border-radius: 25px;
     text-align: center;
 }
 
 .menuBox {
+
     width: 20%;
-    
+
 }
 
 .gnbBox {
-    margin: 0 auto;
-
+    position: absolute;
     box-sizing: border-box;
 }
 
+
 .logo {
-    position: absolute;
     top: 15px;
+    margin-left: 50px;
 }
 
 .tmenu {
@@ -101,17 +102,15 @@ body {
 }
 
 /*************************** 중앙 ***************************/
-.ct{
+.ct {
     position: relative;
 }
 
-.bnBox{
-    
-}
+.bnBox {}
 
-.bnBox img{
+.bnBox img {
     position: absolute;
     width: 100%;
     height: 600px;
-    
+
 }
