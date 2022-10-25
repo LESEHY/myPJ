@@ -31,6 +31,7 @@ body {
 
 .top {
     display: flex;
+    flex-wrap: wrap;
     height: 120px;
     
 }
@@ -62,6 +63,9 @@ body {
 }
 
 .gnbBox {
+    width: 100%;
+    
+    text-align: center;
     box-sizing: border-box;
 }
 
