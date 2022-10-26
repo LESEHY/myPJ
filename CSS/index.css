@@ -5,10 +5,9 @@
 @import url(./core.css);
 @import url(./nav.css);
 
-/* body * {
+body * {
     outline: 1px dashed gray;
-
-} */
+}
 
 html,
 body {
@@ -86,7 +85,7 @@ body {
 
 /* 탑메뉴 상위 li */
 .tmenu>ul>li {
-    padding: 2px 7px;
+    padding: 10px 7px;
 }
 
 /* 탑메뉴 상위 a */
