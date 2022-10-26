@@ -5,10 +5,10 @@
 @import url(./core.css);
 @import url(./nav.css);
 
-body * {
+/* body * {
     outline: 1px dashed gray;
 
-}
+} */
 
 html,
 body {
@@ -62,8 +62,10 @@ body {
 
 .gnbBox {
     position: absolute;
+    width: 100%;
     top: 62px;
-    margin-left: 17.7%;
+    left: 0;
+    /* margin-left: 17.7%; */
   
 }
 

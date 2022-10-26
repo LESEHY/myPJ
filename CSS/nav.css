@@ -4,7 +4,7 @@
     z-index: 999;
     /* 포지션이 있어야 z-index적용됨!
       GNB 하위메뉴가 위에 오도록 z-index를 높인다! */
-    background-color: #f6f5ef;
+
 }
 
 /* ul 초기화 */
@@ -127,7 +127,7 @@
     position: absolute;
 
     /* 메뉴 숨기기 높이값 0, overflow:hidden*/
-    left: 0;
+    left: 200px;
     height: 0;
     overflow: hidden;
     /* 주의: 숨기는 박스에 상하패딩이 있으면 완전히 숨길 수 없다! */
