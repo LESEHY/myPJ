@@ -27,5 +27,5 @@ body {
 /* 중앙박스 */
 .ibx {
     max-width: 85%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }

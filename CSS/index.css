@@ -31,7 +31,6 @@ body {
 .top {
 
     display: flex;
-    flex-wrap: wrap;
     height: 120px;
 
 }
@@ -97,7 +96,9 @@ body {
 .sm>a {
     font-size: 20px;
 }
-
+.smenu{
+    display: flex;
+}
 /* 소제목 */
 .h2t a {
     color: white;
@@ -109,11 +110,13 @@ body {
     position: relative;
 }
 
-.bnBox {}
+.bnBox {
+}
 
 .bnBox img {
-    position: absolute;
     width: 100%;
     height: 600px;
 
 }
+
+/***************************** 하단  *****************************/
