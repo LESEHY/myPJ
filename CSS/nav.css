@@ -46,7 +46,7 @@
 
 /* GNB 오버 시 뒤에 추가 색 보임*/
 .gnb>ul>li.sm:hover::after {
-    height: 400px;
+    height: 450px;
 }
 
 /* li사이에 구분선 넣기 */
@@ -133,7 +133,7 @@
 
 /* GNB 오버 시 메뉴 보임 */
 .gnb>ul>li:hover .smenu {
-    height: 400px;
+    height: 450px;
     /* 모든 하위메뉴 공통! */
 }
 
@@ -143,12 +143,12 @@
     display: block;
 
     color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
+    font-size: 12px;
     line-height: 35px;
 
-    padding: 0px 10px;
-    margin: 10px 50px;
-
+    padding: 2px 10px;
+    margin: 1px 50px;
+    text-align: left;
     /* 트랜지션 */
     /* transition: .2s; */
 }
