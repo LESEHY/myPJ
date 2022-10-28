@@ -124,9 +124,6 @@ body {
     height: 200px;
 }
 
-.ft{
-}
-
 /* 하단링크, 하단정보 */
 .f1, .f2 {
     display: flex;
@@ -134,10 +131,19 @@ body {
     color: #999;
     font-size: 12px;
 }
+/* 하단링크 a */
+.f1 a{
+    color: #999;
+    padding: 0 10px;
+}
 
 /* 개인정보처리방침 글자색 초록 */
 .f1 li:first-child a{
     color: #00b050;
+}
+/* 하단정보 */
+.f2 li{
+    margin: 0 10px;
 }
 /* 버튼박스 */
 .bt{
@@ -161,10 +167,6 @@ body {
     
 }
 
-/* 하단링크 색상 */
-.f1 a{
-    color: #999;
-}
 
 /* ⓒ 2022 Starbucks Coffee Company. All Rights Reserved. */
 .addr {
