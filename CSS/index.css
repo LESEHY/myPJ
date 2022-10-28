@@ -107,10 +107,10 @@ body {
 
 /*************************** 중앙 ***************************/
 .ct {
-    position: relative;
 }
 
-.bnBox {}
+.bnBox {
+}
 
 .bnBox img {
     width: 100%;
@@ -119,27 +119,54 @@ body {
 }
 
 /***************************** 하단  *****************************/
-.ft{
+#info{
     background: #2C2A29;
-    min-height: 601px;
+    height: 200px;
 }
 
+.ft{
+}
 
-.f1 {
+/* 하단링크, 하단정보 */
+.f1, .f2 {
     display: flex;
     justify-content: center;
+    color: #999;
     font-size: 12px;
 }
 
-.f1 li {
-    color: #999;
-    padding: 0 20px;
+/* 개인정보처리방침 글자색 초록 */
+.f1 li:first-child a{
+    color: #00b050;
+}
+/* 버튼박스 */
+.bt{
+    display: flex;
+    justify-content: center;
+}
+/* 각각의 버튼박스 */
+.btns {
+    background: none;
+    border: 2px solid #fff;
+    margin: 10px 2px 10px 3px;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
 }
 
+/* 버튼 a */
+.btns a{
+    font-size: 12px;
+    color: #fff;
+    
+}
+
+/* 하단링크 색상 */
 .f1 a{
     color: #999;
 }
 
+/* ⓒ 2022 Starbucks Coffee Company. All Rights Reserved. */
 .addr {
     color: #999;
     font-size: 12px;
