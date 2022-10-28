@@ -15,16 +15,22 @@ body {
 
 }
 
-/* body{
-    background: url(../img/배너/starbucks1.PNG) no-repeat 0 150px/cover;
-    background-size: 100% 500px;
-} */
+body{
+    padding-top: 123px;
+    /* background: url(../img/배너/starbucks1.PNG) no-repeat 0 150px/cover;
+    background-size: 100% 500px; */
+}
 
 #top {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #f6f5ef;
     border-bottom: 1px solid #e5e5e5;
     border-top: 2px solid #000;
-    overflow: hidden;
+    /* overflow: hidden; */
+    white-space: nowrap;/* 줄바꿈방지 */
+    z-index: 9999;
 }
 
 .top {
@@ -35,7 +41,6 @@ body {
 
 .logoBox {
     width: 40%;
-    height: 0;
 }
 
 .searchBox {
@@ -67,9 +72,9 @@ body {
 
 
 .logo {
-    top: 15px;
-    padding-top: 20px;
-    margin-left: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .tmenu {
@@ -95,9 +100,6 @@ body {
     font-size: 20px;
 }
 
-.smenu {
-    display: flex;
-}
 
 /* 소제목 */
 .h2t a {
