@@ -5,15 +5,14 @@
 @import url(./core.css);
 @import url(./nav.css);
 
-body * {
+/* body * {
     outline: 1px dashed gray;
-}
+} */
 
-html,
+/* html,
 body {
     outline: 2px dotted red;
-
-}
+} */
 
 body{
     padding-top: 123px;
@@ -38,29 +37,29 @@ body{
     height: 120px;
 
 }
-
+/* 로고를 싼 박스 */
 .logoBox {
     width: 10%;
 }
-
+/* 검색창 둘러싼 박스 */
 .searchBox {
     width: 80%;
     padding-top: 15px;
     text-align: center;
 }
-
+/* 검색창 */
 .sh {
     width: 80%;
     height: 30px;
     border-radius: 25px;
     text-align: center;
 }
-
+/* 로그인|회원가입 등 박스 */
 .menuBox {
     width: 10%;
 
 }
-
+/* GNB박스 */
 .gnbBox {
     position: absolute;
     width: 100%;
@@ -70,17 +69,17 @@ body{
 
 }
 
-
+/* 상단 로고 */
 .logo {
     position: relative;
     top: 50%;
     transform: translateY(-50%) translate(-100%);
 }
-
+/* 로그인 | 회원가입 간격 주기 */
 .tmenu {
     padding-top: 10px;
 }
-
+/*  로그인 | 회원가입 한 줄 */
 .tmenu>ul {
     display: flex;
 }
@@ -109,16 +108,11 @@ body{
 }
 
 /*************************** 중앙 ***************************/
-.ct {
-}
 
-.bnBox {
-}
-
-.bnBox img {
-    width: 100%;
-    height: 600px;
-
+/* 배너 배경 */
+.mbg{
+    height: 646px; 
+    background: url(../img/상세/main_bg.jpg) no-repeat center/cover;
 }
 
 /***************************** 하단  *****************************/
@@ -172,7 +166,7 @@ body{
 /* 개인정보처리방침 글자색 초록 */
 .f2 li:first-child a{
     color: #00b050;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 
@@ -223,6 +217,7 @@ body{
     text-align: center;
     padding: 30px 0 40px 0;
 }
+/* 하단로고 이미지 */
 .flogo img{
     width: 15%;
 }
