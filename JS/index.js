@@ -45,7 +45,7 @@ $(() => {
     // 사용메서드: insertBefore(넣을놈,넣을놈전놈)
     // 현재 li자식요소 수집하기!
     let cli = $("#slide li");
-    slide.insertBefore(cli[cli.length - 1], cli.eq(0));
+    slide.insertBefore(cli[cli.length - 1], cli[0]);
 
     // 2. 왼쪽 바깥에 -100% left값 주기!
     slide.css({
@@ -65,8 +65,11 @@ $(() => {
         transition: ".8s ease-in-out"
       }); // css
     }, 0); // setTimeout
-
 }); //////////////click//////////////
+
+slide.querySelectorAll("li").forEach((ele, idx) => {
+    ele.setAttribute("data-seq", idx);
+  }); /////// forEach ////////////////
 
   
 }); //JQB
