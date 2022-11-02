@@ -46,6 +46,7 @@ $(() => {
     // 현재 li자식요소 수집하기!
     let cli = $("#slide li");
     slide.insertBefore(cli[cli.length - 1], cli[0]);
+    console.log(cli);
 
     // 2. 왼쪽 바깥에 -100% left값 주기!
     slide.css({
