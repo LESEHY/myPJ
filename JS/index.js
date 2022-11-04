@@ -45,7 +45,7 @@ $(() => {
         // 사용메서드: insertBefore(넣을놈,넣을놈전놈)
         // 현재 li자식요소 수집하기!
         let cli = $(slide["li"]);
-        slide.insertBefore(cli[cli.length - 1],cli.eq(0));
+        slide.insertBefore(cli[cli.length],cli.eq(0));
         console.log(cli);
 
         slide.css({
