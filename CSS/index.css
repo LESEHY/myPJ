@@ -161,7 +161,7 @@ body{
 }
 
 /* 배너 공통 */
-.mtit, .madr1, .madr2, .madr3, .mbtn{
+.mtit, .madr1, .madr2, .madr3, .madr4, .madr5, .madr6,.mbtn{
     position: absolute;
     top: 50%;
 }
@@ -217,6 +217,19 @@ body{
 /* 배너 음료 3 */
 .madr3{
     transform: translate(67vw , -60%);
+}
+
+/* 2번 배너 음료 1*/
+.madr4{
+    transform: translate(55vw, -40%);
+}
+/* 2번 배너 음료 2 */
+.madr5{
+    transform: translate(40vw, -55%);
+}
+/* 2번 배너 음료 3 */
+.madr6{
+    transform: translate(70vw, -55%);
 }
 
 /***************************** 하단  *****************************/
