@@ -161,7 +161,7 @@ body{
 }
 
 /* 배너 공통 */
-.mtit, .madr1, .madr2, .madr3, .madr4, .madr5, .madr6,.mbtn{
+.mtit, .madr1, .madr2, .madr3, .madr4, .madr5, .madr6, .mbtn, .mbtn2 , .mbtn3{
     position: absolute;
     top: 50%;
 }
@@ -184,6 +184,26 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+/* 배너 버튼 2 */
+.mbtn2{
+    width: 129px;
+    height: 38px;
+    transform: translate(14vw ,5vw);
+    background: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 배너 버튼 3 */
+.mbtn3{
+    width: 129px;
+    height: 38px;
+    transform: translate(14.5vw ,5vw);
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* 배너 버튼 텍스트 */
 .mbtn a{
@@ -195,13 +215,59 @@ body{
     font-size: 15px;
     transition: .5s;
 }
+/* 배너 버튼 텍스트 */
+.mbtn2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    transition: .5s;
+}
+/* 배너 버튼 텍스트 */
+.mbtn3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    color: white;
+    font-size: 15px;
+    transition: .5s;
+}
+
 /* 배너 버튼 오버 */
 .mbtn:hover{
     background-color: white;
     transition: .5s;
 }
+
+/* 배너 버튼 오버 2*/
+.mbtn2:hover{
+    background-color: black;
+    transition: .5s;
+}
+
+/* 배너 버튼 오버 3*/
+.mbtn3:hover{
+    background-color: white;
+    transition: .5s;
+}
+
 /* 배너 버튼 오버시 a */
 .mbtn:hover a{
+    color: black;
+    text-decoration: underline;
+    transition: .5s;
+}
+/* 배너 버튼 오버시 a 2*/
+.mbtn2:hover a{
+    color: white;
+    text-decoration: underline;
+    transition: .5s;
+}
+/* 배너 버튼 오버시 a 3*/
+.mbtn3:hover a{
     color: black;
     text-decoration: underline;
     transition: .5s;
