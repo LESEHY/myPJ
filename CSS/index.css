@@ -111,7 +111,7 @@ body{
 
 /* 배너 옆으로 간 거 숨기기 */
 .bnBox{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* 배너 배경*/

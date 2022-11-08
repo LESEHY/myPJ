@@ -12,9 +12,9 @@ function loadFn() {
 
   const slide = document.querySelector("#slide");
 
-  
 
-//   const indic = document.querySelectorAll(".indic li");
+
+  //   const indic = document.querySelectorAll(".indic li");
 
 
   // 오른쪽 버튼 클릭시
@@ -37,12 +37,8 @@ function loadFn() {
       slide.style.transition = "none";
     }, 800);
 
-    // 블릿변경함수 호출!
-    // -> 오른쪽버튼은 두번째 슬라이드가 주인공!
-    // chgIndic(1);
-
     // 자동넘김지우기 함수 호출!
-    // clearAuto();
+    clearAuto();
   }; //////////// click ////////////////
 
   // 3-2. 왼쪽버튼 클릭시 : 왼쪽버튼 abtn변수 0번째
@@ -77,13 +73,55 @@ function loadFn() {
       slide.style.transition = ".8s ease-in-out";
     }, 0);
 
-    // 블릿변경함수 호출!
-    // -> 왼쪽버튼은 첫번째 슬라이드가 주인공!
-    // chgIndic(0);
-
     // 자동넘김지우기 함수 호출!
-    // clearAuto();
+    clearAuto();
   }; ///////////// click //////////////
+  slide.querySelectorAll("li").forEach((ele, idx) => {
+    ele.setAttribute("data-seq", idx);
+  }); /////// forEach ////////////////
+
+  /***************************************** 
+        자동넘기기 기능구현
+    *****************************************/
+  // 인터발용변수
+  let autoI;
+  // 타임아웃용 변수
+  let autoT;
+
+  // 자동넘기기 /////
+  function slideAuto() {
+    autoI = setInterval(() => {
+      // 오른쪽버튼 클릭시 이동코드와 동일함!!!
+      slide.style.left = "-100%";
+      slide.style.transition = ".8s ease-in-out";
+      // 0.8초후 맨앞li 잘라서 맨뒤로 이동!
+      setTimeout(() => {
+        // 1. 맨앞li 잘라서 맨뒤로 이동!
+        slide.appendChild(slide.querySelectorAll("li")[0]);
+        // 2. left값 0으로 초기화!
+        slide.style.left = "0";
+        /* 3. 트랜지션 없애기 */
+        slide.style.transition = "none";
+      }, 800);
+    }, 2000);
+  } //////// slideAuto 함수 //////////
+
+  // 인터발함수 최초호출!
+  slideAuto();
+
+  /*********************************** 
+        함수명: clearAuto
+        기능: 인터발지우기,타임아웃셋팅
+    ***********************************/
+  function clearAuto() {
+    console.log("인터발지워!!!");
+    // 1. 인터발 지우기
+    clearInterval(autoI);
+    // 2. 타임아웃 지우기(실행쓰나미 방지!)
+    clearTimeout(autoT);
+    // 3. 일정시간 후 다시 인터발 호출!
+    autoT = setTimeout(slideAuto, 5000);
+  } /////// clearAuto함수 ////////
 
 } //////////////// loadFn 함수 ///////////////
 /////////////////////////////////////////////
