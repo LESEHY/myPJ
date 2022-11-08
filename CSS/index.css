@@ -179,34 +179,25 @@ body{
 
 }
 /* 배너 버튼 */
-.mbtn{
+.mbtn, .mbtn2, .mbtn3{
     width: 129px;
     height: 38px;
     transform: translate(14.5vw ,5vw);
     background: none;
-    border: 2px solid #fff;
     border-radius: 5px;
     cursor: pointer;
+}
+/* 배너 버튼 1 */
+.mbtn{
+    border: 2px solid #fff;
 }
 /* 배너 버튼 2 */
 .mbtn2{
-    width: 129px;
-    height: 38px;
-    transform: translate(14vw ,5vw);
-    background: none;
     border: 2px solid #1e3932;;
-    border-radius: 5px;
-    cursor: pointer;
 }
 /* 배너 버튼 3 */
 .mbtn3{
-    width: 129px;
-    height: 38px;
-    transform: translate(23.5vw ,5vw);
-    background: none;
     border: 2px solid #b9813d;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* 배너 버튼 텍스트 */
