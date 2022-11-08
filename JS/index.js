@@ -1,5 +1,3 @@
-// 쇼핑몰 배너 JS - 01.가로방향 배너 슬라이드 //
-
 // HTML태그 로딩후 loadFn함수 호출! ///
 window.addEventListener("DOMContentLoaded", loadFn);
 
@@ -11,11 +9,6 @@ function loadFn() {
   const abtn = document.querySelectorAll(".abtn");
 
   const slide = document.querySelector("#slide");
-
-
-
-  //   const indic = document.querySelectorAll(".indic li");
-
 
   // 오른쪽 버튼 클릭시
   abtn[1].onclick = () => {
@@ -49,10 +42,6 @@ function loadFn() {
     setTimeout(() => (prot = 0), 800);
     ////////////////////////////
 
-    // 1. 맨뒤요소를 잘라서 맨앞으로 이동한다!
-    // 대상: slide변수 -> ul#slide
-    // 사용메서드: insertBefore(넣을놈,넣을놈전놈)
-    // 현재 li자식요소 수집하기!
     let cli = slide.querySelectorAll("li");
     slide.insertBefore(cli[cli.length - 1], cli[0]);
 
@@ -63,10 +52,6 @@ function loadFn() {
     // 첫번째 실행후 생긴 트랜지션 없애기!
     slide.style.transition = "none";
 
-    // 2번과 3번 코드 사이에 시차필요!!!
-    // setTimeout()사용!
-    // -> 시간을 0으로 해도 코드실행구역을 분리하므로
-    // 코드가 별도로 실행된다!(순서를 지킴!)
     setTimeout(() => {
       // 3. left값을 0으로 트랜지션 애니메이션하기
       slide.style.left = "0";
@@ -103,7 +88,7 @@ function loadFn() {
         /* 3. 트랜지션 없애기 */
         slide.style.transition = "none";
       }, 800);
-    }, 2000);
+    }, 5000);
   } //////// slideAuto 함수 //////////
 
   // 인터발함수 최초호출!
@@ -114,7 +99,6 @@ function loadFn() {
         기능: 인터발지우기,타임아웃셋팅
     ***********************************/
   function clearAuto() {
-    console.log("인터발지워!!!");
     // 1. 인터발 지우기
     clearInterval(autoI);
     // 2. 타임아웃 지우기(실행쓰나미 방지!)
