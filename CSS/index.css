@@ -134,13 +134,15 @@ body{
     /* 이미지 비율유지 채우기! */
 }
 
+
 /*이동버튼*/
 .abtn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 70%;
+    transform: translate(80vw, -50%);
     /*Y축 중앙이동*/
 }
+
 
 /*왼쪽버튼*/
 .ab1 {
@@ -149,7 +151,7 @@ body{
 
 /*오른쪽버튼*/
 .ab2 {
-    right: 50px;
+    left: 120px;
 }
 
 /* 배너 공통 */
