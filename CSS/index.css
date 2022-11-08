@@ -190,7 +190,7 @@ body{
     height: 38px;
     transform: translate(14vw ,5vw);
     background: none;
-    border: 2px solid #000;
+    border: 2px solid #1e3932;;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -198,9 +198,9 @@ body{
 .mbtn3{
     width: 129px;
     height: 38px;
-    transform: translate(14.5vw ,5vw);
+    transform: translate(23.5vw ,5vw);
     background: none;
-    border: 2px solid #fff;
+    border: 2px solid #b9813d;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -221,7 +221,7 @@ body{
     width: 100%;
     height: 100%;
     line-height: 35px;
-    color: rgb(0, 0, 0);
+    color: #1e3932;
     font-size: 15px;
     transition: .5s;
 }
@@ -231,7 +231,7 @@ body{
     width: 100%;
     height: 100%;
     line-height: 35px;
-    color: white;
+    color: #b9813d;
     font-size: 15px;
     transition: .5s;
 }
@@ -244,13 +244,13 @@ body{
 
 /* 배너 버튼 오버 2*/
 .mbtn2:hover{
-    background-color: black;
+    background-color: #1e3932;
     transition: .5s;
 }
 
 /* 배너 버튼 오버 3*/
 .mbtn3:hover{
-    background-color: white;
+    background-color: #b9813d;
     transition: .5s;
 }
 
@@ -268,7 +268,7 @@ body{
 }
 /* 배너 버튼 오버시 a 3*/
 .mbtn3:hover a{
-    color: black;
+    color: white;
     text-decoration: underline;
     transition: .5s;
 }
