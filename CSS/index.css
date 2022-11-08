@@ -1,23 +1,15 @@
 @charset "utf-8";
 
-/* reset.css */
 @import url(./reset.css);
 @import url(./core.css);
 @import url(./nav.css);
 
-    /* body * {
-        outline: 1px dashed gray;
-    } */
-
-/* html,
-body {
-    outline: 2px dotted red;
+/* body * {
+    outline: 1px dashed gray;
 } */
 
 body{
     padding-top: 123px;
-    /* background: url(../img/배너/starbucks1.PNG) no-repeat 0 150px/cover;
-    background-size: 100% 500px; */
 }
 
 #top {
