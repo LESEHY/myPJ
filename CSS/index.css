@@ -369,6 +369,10 @@ body{
     
 }
 
+.btns:hover a{
+    text-decoration: underline;
+}
+
 /* 하단정보 */
 .f3 li{
     padding: 0 1vw;
