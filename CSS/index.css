@@ -299,20 +299,44 @@ body{
 
 .notice_box{
     width: 50%;
+    display: flex;
+    background-color: black;
+    padding-top: 22.5px;
 }
+
 /* 공지사항 */
 .notice_tit{
-    background-color: rgb(59, 57, 57);
-    padding-top: 22.5px;
-    text-align: ;
-    
+    padding-left: 35%;
 }
+
+/* 공지사항 이미지 */
 .notice_tit img{
     width: 65px;
-    height: 17px;
+    height: 18px;
 }
+/* 공지내용 */
+.notice{
+    padding-left: 20px;
+}
+/* 공지 내용 a */
 .notice a{
     color: #fff;
+    font-size: 14px;
+}
+/* 공지 내용 오버시 밑줄 */
+.notice a:hover{
+    text-decoration: underline;
+}
+
+/* 공지사항 더보기 */
+.ntp{
+    padding-left: 30%;
+    transform: translateY(-12px);
+}
+
+.ntp img{
+    width: 45px;
+    height: 45px;
 }
 
 /* 프로모션 */
