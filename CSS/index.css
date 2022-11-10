@@ -316,6 +316,7 @@ body{
 }
 /* 공지내용 */
 .notice{
+    overflow: hidden;
     padding-left: 20px;
 }
 /* 공지 내용 a */
