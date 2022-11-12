@@ -300,7 +300,7 @@ body{
 .notice_box{
     width: 50%;
     display: flex;
-    background-color: black;
+    background-color: #111;
     padding-top: 22.5px;   
     overflow: hidden;
 
@@ -318,6 +318,7 @@ body{
 }
 /* 공지내용 */
 #notice{
+    position: relative;
     display: flex;
     flex-direction: column;
     top: 0;
@@ -344,9 +345,12 @@ body{
 
 /* 공지사항 더보기 */
 .ntp{
-    padding-left: 30%;
-    transform: translateY(-12px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-100px, -14px);
+    
 }
+
 
 .ntp img{
     width: 45px;

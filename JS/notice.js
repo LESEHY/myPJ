@@ -1,7 +1,6 @@
 // 공지사항 JS
 $(() => {
     const notice = $("#notice");
-    const nota = $("#notice li");
 
 
     function noticeAuto() {
