@@ -369,6 +369,36 @@ body{
     height: 17px;
 }
 
+/* 스타벅스 유튜브 */
+.youtubeBox{
+    display: flex;
+    background-color: #1e3932;
+    height: 450px;
+}
+
+.ytbn{
+    width: 60%;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.ytbn span{
+    font-weight: bold;
+
+}
+
+.ytvideo{
+    width: 38%; 
+}
+
+
+.ytvideo iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 
 
 /***************************** 하단  *****************************/
@@ -396,6 +426,10 @@ body{
     margin-right: auto;
     /* 줄바꿈방지 */
     white-space: nowrap;
+}
+
+.f1 li>a:hover{
+    text-decoration: underline;
 }
 /* COMPANY와 동일한 라인*/
 .st a:first-child{
