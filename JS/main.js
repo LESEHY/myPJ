@@ -87,8 +87,8 @@ function loadFn() {
         slide.style.left = "0";
         /* 3. 트랜지션 없애기 */
         slide.style.transition = "none";
-      }, 800);
-    }, 5000);
+      }, 800); // setTime
+    }, 5000); // setInter
   } //////// slideAuto 함수 //////////
 
   // 인터발함수 최초호출!
