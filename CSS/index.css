@@ -369,14 +369,14 @@ body{
     height: 17px;
 }
 
-/* 스타벅스 유튜브 */
+/* 스타벅스 유튜브 박스*/
 .youtubeBox{
     display: flex;
     background-color: #1e3932;
     height: 450px;
 }
 
-
+/* 이미지 문구 버튼 묶음 박스 */
 .ytbn{
     display: flex;
     width: 60%;
@@ -385,40 +385,49 @@ body{
     justify-content: center;
 }
 
+/* 스타벅스 리워드 이미지 */
 .ytbn img{
     width: 176px;
     height: 152.58px;
 }
 
+/* 스타벅스 유튜브 문구 박스 */
 .ytb{
+    position: relative;
     display: flex;
     flex-direction: column;
-}
-
-.ytb{
     padding-left: 50px;
 }
+
+/* 스타벅스 유튜브 문구 1 */
 .ytxt1{
     padding-bottom: 20px;
     font-size: 26px;
     font-weight: bold;
 }
+/* 스타벅스 유튜브 문구 2 */
 .ytxt2{
     font-size: 17px;
     
 }
+/* 유튜브 이동버튼 */
 .ytbt{
-    width: 129px;
-    height: 38px;
+    position: absolute;
+    top: 50%;
+    width: 179px;
+    height: 80px;
     background: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     border: 2px solid #c4302b;
+    transform: translate(80%);
 }
 
+
 .ytbt a{
-    color: #fff;
+    color: #c4302b;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .ytbt:hover {
@@ -427,15 +436,16 @@ body{
 }
 .ytbt:hover a{
     text-decoration: underline;
-    color: #000;
+    color: #fff;
     transition: .5s;
 }
 
+/* 유튜브 영상 박스 */
 .ytvideo{
     width: 38%; 
 }
 
-
+/* 유튜브 영상 */
 .ytvideo iframe{
     width: 100%;
     height: 100%;
