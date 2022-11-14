@@ -376,16 +376,59 @@ body{
     height: 450px;
 }
 
+
 .ytbn{
+    display: flex;
     width: 60%;
-    text-align: center;
-    font-size: 40px;
     color: #fff;
+    padding-top: 148px;
+    justify-content: center;
 }
 
-.ytbn span{
-    font-weight: bold;
+.ytbn img{
+    width: 176px;
+    height: 152.58px;
+}
 
+.ytb{
+    display: flex;
+    flex-direction: column;
+}
+
+.ytb{
+    padding-left: 50px;
+}
+.ytxt1{
+    padding-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.ytxt2{
+    font-size: 17px;
+    
+}
+.ytbt{
+    width: 129px;
+    height: 38px;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #c4302b;
+}
+
+.ytbt a{
+    color: #fff;
+    font-weight: bold;
+}
+
+.ytbt:hover {
+    transition: .5s;
+    background-color: #c4302b;
+}
+.ytbt:hover a{
+    text-decoration: underline;
+    color: #000;
+    transition: .5s;
 }
 
 .ytvideo{
