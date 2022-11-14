@@ -455,11 +455,11 @@ body{
 /* 앱 다운 박스 */
 .appstBox{
     display: flex;
+    height: 661px;
+    background-color: #107e6a;
 }
 .appBox{
     width: 50%;
-    height: 661px;
-    background-color: #107e6a;
 }
 
 .google{
@@ -479,6 +479,7 @@ body{
 
 .adBox{
     width: 50%;
+    
 }
 
 
