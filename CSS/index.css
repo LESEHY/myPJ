@@ -452,6 +452,35 @@ body{
     border: none;
 }
 
+/* 앱 다운 박스 */
+.appstBox{
+    display: flex;
+}
+.appBox{
+    width: 50%;
+    height: 661px;
+    background-color: #107e6a;
+}
+
+.google{
+    width: 141px;
+    height: 42px;
+}
+
+.apple{
+    width: 141px;
+    height: 42px;
+}
+
+.lsr{
+    width: 195px;
+    height: 47.38px;
+}
+
+.adBox{
+    width: 50%;
+}
+
 
 
 /***************************** 하단  *****************************/
