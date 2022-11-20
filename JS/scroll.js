@@ -2,7 +2,7 @@
 // 915.234375
 // 1035.234375
 $(() => {
-    
+    let prot = 0;
     let pb = $(".phoneBox");
     let ab = $(".appBox");
 
@@ -10,19 +10,25 @@ $(() => {
     pb.hide();
     ab.hide();
     console.log("스크롤 JS");
-    $(window).scroll(()=>{
+    $(window).scroll(() => {
         Top = $(this).scrollTop();
-        // console.log(Top);
+
+
         // 600보다 크거나 같으면 보이기
-        if(Top >= 600){
+        if (Top > 550) {
             // console.log("dd");
             pb.fadeIn(1200);
             ab.fadeIn(1200);
-        }
-        else{
+            if (prot) return; // 나가!
+            prot = 1; // 잠금!
+            setTimeout(() => (prot = 0), 1200);
+        } else {
             // 아니면 숨기기
-            pb.fadeOut(1200);
-            ab.fadeOut(1200);
+            pb.fadeOut(600);
+            ab.fadeOut(600);
+            if (prot) return; // 나가!
+            prot = 1; // 잠금!
+            setTimeout(() => (prot = 0), 1200);
         }
     })
 
