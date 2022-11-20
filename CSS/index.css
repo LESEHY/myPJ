@@ -8,7 +8,7 @@
     outline: 1px dashed gray;
 } */
 
-body{
+body {
     padding-top: 123px;
 }
 
@@ -20,7 +20,8 @@ body{
     border-bottom: 1px solid #e5e5e5;
     border-top: 2px solid #000;
     /* overflow: hidden; */
-    white-space: nowrap;/* 줄바꿈방지 */
+    white-space: nowrap;
+    /* 줄바꿈방지 */
     z-index: 9999;
 }
 
@@ -29,16 +30,19 @@ body{
     height: 120px;
 
 }
+
 /* 로고를 싼 박스 */
 .logoBox {
     width: 10%;
 }
+
 /* 검색창 둘러싼 박스 */
 .searchBox {
     width: 80%;
     padding-top: 15px;
     text-align: center;
 }
+
 /* 검색창 */
 .sh {
     width: 80%;
@@ -46,19 +50,19 @@ body{
     border-radius: 25px;
     text-align: center;
 }
+
 /* 로그인|회원가입 등 박스 */
 .menuBox {
     width: 10%;
 
 }
+
 /* GNB박스 */
 .gnbBox {
     position: absolute;
     width: 100%;
     top: 62px;
     left: 0;
-    /* margin-left: 17.7%; */
-
 }
 
 /* 상단 로고 */
@@ -67,10 +71,12 @@ body{
     top: 50%;
     transform: translateY(-50%) translate(-100%);
 }
+
 /* 로그인 | 회원가입 간격 주기 */
 .tmenu {
     padding-top: 10px;
 }
+
 /*  로그인 | 회원가입 한 줄 */
 .tmenu>ul {
     display: flex;
@@ -102,12 +108,12 @@ body{
 /*************************** 중앙 ***************************/
 
 /* 배너 옆으로 간 거 숨기기 */
-.bnBox{
+.bnBox {
     overflow: hidden;
 }
 
 /* 배너 배경*/
-#slide{
+#slide {
     position: relative;
     display: flex;
     top: 0;
@@ -126,7 +132,7 @@ body{
     display: flex;
 }
 
-.mbg{
+.mbg {
     /*이미지는 박스에 맞춤!*/
     width: 100%;
     height: 100%;
@@ -136,14 +142,15 @@ body{
 
 
 /*이동버튼*/
-.abtn, .bgbox{
+.abtn,
+.bgbox {
     position: absolute;
     top: 70%;
     transform: translate(80vw, -50%);
     /*Y축 중앙이동*/
 }
 
-.abtn{
+.abtn {
     z-index: 99;
 }
 
@@ -157,7 +164,7 @@ body{
     left: 120px;
 }
 
-.bgbox{
+.bgbox {
     background-color: #fff;
     border-radius: 30px;
     width: 153px;
@@ -165,159 +172,191 @@ body{
 }
 
 /****************** 배너 공통 ******************/
-.mtit, .madr1, .madr2, .madr3, .madr4, .madr5, .madr6, .mbtn, .mbtn2 , .mbtn3{
+.mtit,
+.madr1,
+.madr2,
+.madr3,
+.madr4,
+.madr5,
+.madr6,
+.mbtn,
+.mbtn2,
+.mbtn3 {
     position: absolute;
     top: 50%;
 }
 
 
 /* 배너 타이틀 */
-.mtit{
+.mtit {
     align-items: center;
     flex-direction: column;
-    transform: translate(10vw , -70%);
+    transform: translate(10vw, -70%);
 
 }
+
 /******************************** 배너 버튼 공통********************************/
-.mbtn, .mbtn2, .mbtn3{
+.mbtn,
+.mbtn2,
+.mbtn3 {
     width: 129px;
     height: 38px;
     background: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* 배너 버튼 1 */
-.mbtn{
+.mbtn {
     border: 2px solid #fff;
-    transform: translate(14.5vw ,5vw);
+    transform: translate(14.5vw, 5vw);
 }
+
 /* 배너 버튼 2 */
-.mbtn2{
+.mbtn2 {
     border: 2px solid #1e3932;
-    transform: translate(14vw ,5vw);
+    transform: translate(14vw, 5vw);
 }
+
 /* 배너 버튼 3 */
-.mbtn3{
+.mbtn3 {
     border: 2px solid #b9813d;
-    transform: translate(23.5vw ,5vw);
+    transform: translate(23.5vw, 5vw);
 }
 
 /**************************** 배너 버튼 텍스트 공통 ****************************/
-.mbtn1 a, .mbtn2 a, .mbtn3 a{
+.mbtn1 a,
+.mbtn2 a,
+.mbtn3 a {
     display: block;
     width: 100%;
     height: 100%;
     line-height: 35px;
     font-size: 15px;
     transition: .5s;
-    
+
 }
 
 /* 배너 버튼 텍스트 1*/
-.mbtn a{
+.mbtn a {
     color: white;
 }
+
 /* 배너 버튼 텍스트 2*/
-.mbtn2 a{
+.mbtn2 a {
     color: #1e3932;
 }
+
 /* 배너 버튼 텍스트 3*/
-.mbtn3 a{
+.mbtn3 a {
     color: #b9813d;
 }
 
 /****************************** 배너 버튼 오버 공통 ******************************/
-.mbtn:hover, .mbtn2:hover, .mbtn3:hover{
+.mbtn:hover,
+.mbtn2:hover,
+.mbtn3:hover {
     transition: .5s;
 }
+
 /* 배너 버튼 오버 1*/
-.mbtn:hover{
+.mbtn:hover {
     background-color: white;
 }
 
 /* 배너 버튼 오버 2*/
-.mbtn2:hover{
+.mbtn2:hover {
     background-color: #1e3932;
 }
 
 /* 배너 버튼 오버 3*/
-.mbtn3:hover{
+.mbtn3:hover {
     background-color: #b9813d;
 }
 
 /****************************** 배너 버튼 오버시 a 공통 ******************************/
-.mbtn:hover a, .mbtn2:hover a, .mbtn3:hover a{
+.mbtn:hover a,
+.mbtn2:hover a,
+.mbtn3:hover a {
     text-decoration: underline;
     transition: .5s;
 }
+
 /* 배너 버튼 오버시 a 1 */
-.mbtn:hover a{
+.mbtn:hover a {
     color: black;
 }
+
 /* 배너 버튼 오버시 a 2*/
-.mbtn2:hover a{
+.mbtn2:hover a {
     color: white;
 }
+
 /* 배너 버튼 오버시 a 3*/
-.mbtn3:hover a{
+.mbtn3:hover a {
     color: white;
 }
 
 
 /* 배너 음료 1 */
-.madr1{
-    transform: translate(50vw , -40%);
+.madr1 {
+    transform: translate(50vw, -40%);
 }
+
 /* 배너 음료 2 */
-.madr2{
-    transform: translate(37vw , -60%);
+.madr2 {
+    transform: translate(37vw, -60%);
 }
+
 /* 배너 음료 3 */
-.madr3{
-    transform: translate(67vw , -60%);
+.madr3 {
+    transform: translate(67vw, -60%);
 }
 
 /* 2번 배너 음료 1*/
-.madr4{
+.madr4 {
     transform: translate(55vw, -40%);
 }
+
 /* 2번 배너 음료 2 */
-.madr5{
+.madr5 {
     transform: translate(40vw, -55%);
 }
+
 /* 2번 배너 음료 3 */
-.madr6{
+.madr6 {
     transform: translate(70vw, -55%);
 }
 
 /**************************** 메인 2번째 ****************************/
 /* 공지사항 | 프로모션 라인 */
-.npline{
+.npline {
     display: flex;
     height: 62px;
 }
 
-.notice_box{
+.notice_box {
     width: 50%;
     display: flex;
     background-color: #111;
-    padding-top: 22.5px;   
+    padding-top: 22.5px;
     overflow: hidden;
 
 }
 
 /* 공지사항 */
-.notice_tit{
+.notice_tit {
     padding-left: 35%;
 }
 
 /* 공지사항 이미지 */
-.notice_tit img{
+.notice_tit img {
     width: 65px;
     height: 18px;
 }
+
 /* 공지내용 */
-#notice{
+#notice {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -325,7 +364,7 @@ body{
     padding-left: 20px;
 }
 
-#notice li{
+#notice li {
     flex-shrink: 0;
     /* 부모박스크기만큼 줄어들지 않음 -> 0 */
     flex-basis: 100%;
@@ -333,51 +372,55 @@ body{
     /* height 값은 flex박스 자식요소에서
     등분할시 자동 100%임! */
 }
+
 /* 공지 내용 a */
-#notice a{
+#notice a {
     color: #fff;
     font-size: 14px;
 }
+
 /* 공지 내용 오버시 밑줄 */
-#notice a:hover{
+#notice a:hover {
     text-decoration: underline;
 }
 
 /* 공지사항 더보기 */
-.ntp{
+.ntp {
     position: absolute;
     left: 50%;
     transform: translate(-100px, -14px);
-    
+
 }
 
 
-.ntp img{
+.ntp img {
     width: 45px;
     height: 45px;
 }
 
 /* 프로모션 */
-.prom{
+.prom {
     width: 50%;
-    background-color: #f6f5ef;;
+    background-color: #f6f5ef;
+    ;
     text-align: center;
     padding-top: 22.5px;
 }
-.prom img{
+
+.prom img {
     width: 129px;
     height: 17px;
 }
 
 /* 스타벅스 유튜브 박스*/
-.youtubeBox{
+.youtubeBox {
     display: flex;
     background-color: #1e3932;
-    height: 450px;
+    height: 410px;
 }
 
 /* 이미지 문구 버튼 묶음 박스 */
-.ytbn{
+.ytbn {
     display: flex;
     width: 60%;
     color: #fff;
@@ -386,13 +429,13 @@ body{
 }
 
 /* 스타벅스 리워드 이미지 */
-.ytbn img{
+.ytbn img {
     width: 176px;
     height: 152.58px;
 }
 
 /* 스타벅스 유튜브 문구 박스 */
-.ytb{
+.ytb {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -400,18 +443,20 @@ body{
 }
 
 /* 스타벅스 유튜브 문구 1 */
-.ytxt1{
+.ytxt1 {
     padding-bottom: 20px;
     font-size: 26px;
     font-weight: bold;
 }
+
 /* 스타벅스 유튜브 문구 2 */
-.ytxt2{
+.ytxt2 {
     font-size: 17px;
-    
+
 }
+
 /* 유튜브 이동버튼 */
-.ytbt{
+.ytbt {
     position: absolute;
     top: 50%;
     width: 179px;
@@ -424,7 +469,7 @@ body{
 }
 
 
-.ytbt a{
+.ytbt a {
     color: #c4302b;
     font-weight: bold;
     font-size: 24px;
@@ -434,75 +479,92 @@ body{
     transition: .5s;
     background-color: #c4302b;
 }
-.ytbt:hover a{
+
+.ytbt:hover a {
     text-decoration: underline;
     color: #fff;
     transition: .5s;
 }
 
 /* 유튜브 영상 박스 */
-.ytvideo{
-    width: 38%; 
+.ytvideo {
+    width: 38%;
 }
 
 /* 유튜브 영상 */
-.ytvideo iframe{
+.ytvideo iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
 /* 앱 다운 박스 */
-.appstBox{
+.appstBox {
     display: flex;
-    height: 661px;
-    background-color: #107e6a;
+    height: 536px;
+    background-color: #ccc;
 }
-.appBox{
+/* 앱 이미지 박스 */
+.phoneBox {
     width: 50%;
 }
+/* 스타벅스 앱 이미지 */
+.phi{
+    text-align: right;
+}
+/* 문구, 앱 다운 이동 버튼 박스 */
+.appBox {
+    width: 50%;
+    margin-top: 100px;
+    text-align: center;
+}
 
-.google{
+/* 스타벅스 앱 문구 */
+.appBox span{
+    font-size: 40px;
+    font-weight: bold;
+}
+/* 앱 다운 버튼 */
+.store{
+    margin-top: 50px;
+    /* padding-top: 50px; */
+    text-align: center;
+}
+/* 구글 다운 버튼 이미지 */
+.google {
+    width: 141px;
+    height: 42px;
+}
+/* 애플 다운 버튼 이미지 */
+.apple {
     width: 141px;
     height: 42px;
 }
 
-.apple{
-    width: 141px;
-    height: 42px;
-}
 
-.lsr{
-    width: 195px;
-    height: 47.38px;
-}
 
-.adBox{
-    width: 50%;
-    
-}
 
 
 
 /***************************** 하단  *****************************/
-#info{
+#info {
     background: #2C2A29;
 }
 
 /* 바로가기 ol */
-.f1 ol{
+.f1 ol {
     padding: 30px 4vw 80px;
 }
 
 /* 바로가기 li*/
-.f1 li{
+.f1 li {
     display: flex;
     justify-content: center;
     line-height: 2.2;
 }
 
 /* 바로가기 메뉴 */
-.f1 li>a{
+.f1 li>a {
     color: white;
     font-size: 12px;
     /* 텍스트 왼쪽으로 정렬 */
@@ -511,43 +573,52 @@ body{
     white-space: nowrap;
 }
 
-.f1 li>a:hover{
+.f1 li>a:hover {
     text-decoration: underline;
 }
+
 /* COMPANY와 동일한 라인*/
-.st a:first-child{
+.st a:first-child {
     font-weight: bold;
     font-size: 14px;
     padding: 2px;
 }
 
 /* 하단링크, 하단정보 */
-.f2, .f3 {
+.f2,
+.f3 {
     display: flex;
     justify-content: center;
     color: #999;
     font-size: 12px;
 }
+
 /* 하단링크 a */
-.f2 a{
+.f2 a {
     color: #ccc;
     padding: 0 10px;
     line-height: 2;
-    white-space: nowrap;/* 줄바꿈방지 */
+    white-space: nowrap;
+    /* 줄바꿈방지 */
+}
+
+.f2 a:hover{
+    text-decoration: underline;
 }
 
 /* 개인정보처리방침 글자색 초록 */
-.f2 li:first-child a{
+.f2 li:first-child a {
     color: #00b050;
     font-weight: 700;
 }
 
 
 /* 버튼박스 */
-.bt{
+.bt {
     display: flex;
     justify-content: center;
 }
+
 /* 각각의 버튼박스 */
 .btns {
     text-align: center;
@@ -561,21 +632,22 @@ body{
 }
 
 /* 버튼 a */
-.btns a{
+.btns a {
     font-size: 12px;
     color: #fff;
-    
+
 }
 
-.btns:hover a{
+.btns:hover a {
     text-decoration: underline;
 }
 
 /* 하단정보 */
-.f3 li{
+.f3 li {
     padding: 0 1vw;
     line-height: 3;
-    white-space: nowrap;/* 줄바꿈방지 */
+    white-space: nowrap;
+    /* 줄바꿈방지 */
 }
 
 
@@ -586,15 +658,17 @@ body{
     font-style: normal;
     text-align: center;
     line-height: 4;
-    white-space: nowrap;/* 줄바꿈방지 */
+    white-space: nowrap;
+    /* 줄바꿈방지 */
 }
 
 /* 하단로고 */
-.flogo{
+.flogo {
     text-align: center;
     padding: 30px 0 40px 0;
 }
+
 /* 하단로고 이미지 */
-.flogo img{
+.flogo img {
     width: 15%;
 }

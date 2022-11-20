@@ -46,21 +46,6 @@
     height: 450px;
 }
 
-/* li사이에 구분선 넣기 */
-.gnb > ul > li + li::before {
-    content: "";
-    display: block;
-    position: absolute;
-    /* 젠틀앱솔루트:
-      부모박스안에 그대로있음! */
-    width: 1px;
-    height: 20px;
-    margin-top: 10px;
-    margin-left: 1px;
-
-    /* border-left: 1px solid #000; */
-}
-
 /* li 상위메뉴 a요소 */
 .gnb > ul > li > a {
     /* a요소 확장 */
@@ -122,12 +107,11 @@
     /* 메뉴 숨기기 높이값 0, overflow:hidden*/
     left: 50%;
     transform: translateX(-50%);
-    width: 1100px;
+    width: 1050px;
     max-width: 100%;
     height: 0;
     overflow: hidden;
     /* 주의: 숨기는 박스에 상하패딩이 있으면 완전히 숨길 수 없다! */
-
     /* 상위메뉴 오버시 배경색과 동일 */
     background-color: #2c2a29;
 }
@@ -147,7 +131,7 @@
     font-size: 12px;
     line-height: 35px;
 
-    padding: 2px 1vw;
+    padding: 2px .5vw;
     margin: 1px 2vw;
     text-align: left;
     /* 트랜지션 */
