@@ -499,7 +499,7 @@ body {
 }
 
 /* 앱 다운 박스 */
-.appstBox {
+.appstBox{
     display: flex;
     height: 536px;
     background-color: #ccc;
