@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* media.css */
+@media screen and (max-width: 1400px) {
+    .logoBox {
+        width: 5%;
+    }
+    .searchBox {
+    width: 83%;
+    }
+    .menuBox {
+        width: 12%;
+    }
+    .gnbBox {
+        width: 94.5%;
+    }
+}

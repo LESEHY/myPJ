@@ -45,7 +45,7 @@ body {
 
 /* 검색창 */
 .sh {
-    width: 80%;
+    width: 75%;
     height: 30px;
     border-radius: 25px;
     text-align: center;
@@ -54,7 +54,6 @@ body {
 /* 로그인|회원가입 등 박스 */
 .menuBox {
     width: 10%;
-
 }
 
 /* GNB박스 */
