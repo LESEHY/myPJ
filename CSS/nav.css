@@ -19,7 +19,7 @@
 
 /* 상위li 리스트요소 */
 .gnb > ul > li {
-    width: 190px;
+    width: 180px;
     text-align: center;
 }
 

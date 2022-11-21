@@ -1,16 +1,15 @@
 @charset "utf-8";
+
 /* media.css */
 @media screen and (max-width: 1400px) {
-    .logoBox {
-        width: 5%;
+    .logo {
+        transform: translateY(-50%) translate(-50%);
     }
-    .searchBox {
-    width: 83%;
+
+    
+
+    .smenu {
+        width: 1000px;
     }
-    .menuBox {
-        width: 12%;
-    }
-    .gnbBox {
-        width: 94.5%;
-    }
+
 }

@@ -4,9 +4,9 @@
 @import url(./core.css);
 @import url(./nav.css);
 
-/* body * {
+body * {
     outline: 1px dashed gray;
-} */
+}
 
 body {
     padding-top: 123px;
@@ -38,14 +38,14 @@ body {
 
 /* 검색창 둘러싼 박스 */
 .searchBox {
-    width: 80%;
+    width: 75%;
     padding-top: 15px;
     text-align: center;
 }
 
 /* 검색창 */
 .sh {
-    width: 75%;
+    width: 90%;
     height: 30px;
     border-radius: 25px;
     text-align: center;
@@ -61,7 +61,7 @@ body {
     position: absolute;
     width: 100%;
     top: 62px;
-    left: 0;
+    left: 0px;
 }
 
 /* 상단 로고 */
@@ -71,7 +71,7 @@ body {
     transform: translateY(-50%) translate(-100%);
 }
 
-/* 로그인 | 회원가입 간격 주기 */
+/* 로그인 | 회원가입 상단 간격 주기 */
 .tmenu {
     padding-top: 10px;
 }
