@@ -4,9 +4,9 @@
 @import url(./core.css);
 @import url(./nav.css);
 
-body * {
+/* body * {
     outline: 1px dashed gray;
-}
+} */
 
 body {
     padding-top: 123px;
@@ -38,7 +38,7 @@ body {
 
 /* 검색창 둘러싼 박스 */
 .searchBox {
-    width: 75%;
+    width: 80%;
     padding-top: 15px;
     text-align: center;
 }
@@ -60,15 +60,17 @@ body {
 .gnbBox {
     position: absolute;
     width: 100%;
-    top: 62px;
-    left: 0px;
+    top: 61px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 /* 상단 로고 */
 .logo {
     position: relative;
     top: 50%;
-    transform: translateY(-50%) translate(-100%);
+    transform: translate(-100%, -50%);
 }
 
 /* 로그인 | 회원가입 상단 간격 주기 */
@@ -498,19 +500,22 @@ body {
 }
 
 /* 앱 다운 박스 */
-.appstBox{
+.appstBox {
     display: flex;
     height: 536px;
     background-color: #ccc;
 }
+
 /* 앱 이미지 박스 */
 .phoneBox {
     width: 50%;
 }
+
 /* 스타벅스 앱 이미지 */
-.phi{
+.phi {
     text-align: right;
 }
+
 /* 문구, 앱 다운 이동 버튼 박스 */
 .appBox {
     width: 50%;
@@ -519,21 +524,24 @@ body {
 }
 
 /* 스타벅스 앱 문구 */
-.appBox span{
+.appBox span {
     font-size: 40px;
     font-weight: bold;
 }
+
 /* 앱 다운 버튼 */
-.store{
+.store {
     margin-top: 50px;
     /* padding-top: 50px; */
     text-align: center;
 }
+
 /* 구글 다운 버튼 이미지 */
 .google {
     width: 141px;
     height: 42px;
 }
+
 /* 애플 다운 버튼 이미지 */
 .apple {
     width: 141px;
@@ -601,7 +609,7 @@ body {
     /* 줄바꿈방지 */
 }
 
-.f2 a:hover{
+.f2 a:hover {
     text-decoration: underline;
 }
 

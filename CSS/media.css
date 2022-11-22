@@ -6,10 +6,19 @@
         transform: translateY(-50%) translate(-50%);
     }
 
-    
-
-    .smenu {
-        width: 1000px;
+    .sh {
+        width: 80%;
     }
 
+    /* .smenu {
+        width: 1000px;
+    } */
+
+    .gnb>ul>li {
+        width: 180px;
+    }
+
+    .gnb>ul>li>a {
+        font-size: 17px;
+    }
 }
