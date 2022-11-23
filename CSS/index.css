@@ -53,7 +53,9 @@ body {
 
 /* 로그인|회원가입 등 박스 */
 .menuBox {
-    width: 10%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 /* GNB박스 */
@@ -107,9 +109,9 @@ body {
 }
 
 /*************************** 중앙 ***************************/
-
 /* 배너 옆으로 간 거 숨기기 */
 .bnBox {
+    position: relative;
     overflow: hidden;
 }
 
@@ -143,33 +145,38 @@ body {
 
 
 /*이동버튼*/
-.abtn,
+.abtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .bgbox {
     position: absolute;
-    top: 70%;
+    bottom: 1vh;
     transform: translate(80vw, -50%);
     /*Y축 중앙이동*/
+    background-color: #fff;
+    border-radius: 5vw;
+    width: min(153px,10vw);
+    padding-top: 4%;
 }
 
 .abtn {
     z-index: 99;
+    width: max(10px,1.1vw);
+}
+.abtn img{
+    width: 100%;
 }
 
 /*왼쪽버튼*/
 .ab1 {
-    left: 20px;
+    left: 10%;
 }
 
 /*오른쪽버튼*/
 .ab2 {
-    left: 120px;
-}
-
-.bgbox {
-    background-color: #fff;
-    border-radius: 30px;
-    width: 153px;
-    height: 60px;
+    right: 10%;
 }
 
 /****************** 배너 공통 ******************/
@@ -359,7 +366,6 @@ body {
 /* 공지내용 */
 #notice {
     position: relative;
-    display: flex;
     flex-direction: column;
     top: 0;
     padding-left: 20px;
@@ -372,6 +378,12 @@ body {
     /* 가로크기를 부모박스 크기에 맞춤! */
     /* height 값은 flex박스 자식요소에서
     등분할시 자동 100%임! */
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+}
+#notice li.on{
+    display: block;
 }
 
 /* 공지 내용 a */

@@ -36,25 +36,6 @@
             <div class="searchBox">
                 <input class="sh" type="text" placeholder="검색어를 입력하세요!">
             </div>
-            <div class="menuBox">
-                <!-- 로그인 -->
-                <aside class="tmenu">
-                    <ul class="clb">
-                        <li>
-                            <a href="#">로그인</a>
-                        </li>
-                        <li>
-                            <a href="#">회원가입</a>
-                        </li>
-                        <li>
-                            <a href="#">고객센터</a>
-                        </li>
-                        <li>
-                            <a href="#">매장찾기</a>
-                        </li>
-                    </ul>
-                </aside>
-            </div> <!-- menuBox -->
 
             <div class="gb1"></div>
 
@@ -240,7 +221,27 @@
                 </nav>
             </div> <!-- gnbBox -->
             <div class="gb2"></div>
-        </header>
+        </header><!-- 중앙속박스 -->
+        
+        <div class="menuBox">
+            <!-- 로그인 -->
+            <aside class="tmenu">
+                <ul class="clb">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="#">매장찾기</a>
+                    </li>
+                </ul>
+            </aside>
+        </div> <!-- menuBox -->
     </div>
     <!-- 중앙 -->
     <main class="ct">
@@ -293,12 +294,14 @@
                     </button>
                 </li>
             </ul>
+            <div class="bgbox">
+                <!-- 이동버튼 -->
+                <a href="#" class="abtn ab1"><img src="./img/상세/left.png" alt="왼쪽 넘기기 버튼"></a>
+                <a href="#" class="abtn ab2"><img src="./img/상세/right.png" alt="오른쪽 넘기기 버튼"></a>
+            </div>
         </div>
 
-        <!-- 이동버튼 -->
-        <a href="#" class="abtn ab1"><img src="./img/상세/left.png" alt="왼쪽 넘기기 버튼"></a>
-        <a href="#" class="abtn ab2"><img src="./img/상세/right.png" alt="오른쪽 넘기기 버튼"></a>
-        <div class="bgbox"></div>
+        
         </div>
 
         <!-- 공지사항 | 프로모션 -->
@@ -309,13 +312,13 @@
                 </div>
                 <!-- 공지사항 내용 -->
                 <ul id="notice">
-                    <li data-nt>
+                    <li class="on">
                         <a href="#">홈페이지 이용약관 개정 안내</a>
                     </li>
-                    <li data-nt>
+                    <li>
                         <a href="#">시스템 개선 및 점검 안내</a>
                     </li>
-                    <li data-nt>
+                    <li>
                         <a href="#">시스템 개선 및 서비스 점검 안내</a>
                     </li>
                 </ul>

@@ -17,15 +17,15 @@ $(() => {
         // 600보다 크거나 같으면 보이기
         if (Top > 550) {
             // console.log("dd");
-            pb.fadeIn(1200);
-            ab.fadeIn(1200);
+            pb.stop().fadeIn(1200);
+            ab.stop().fadeIn(1200);
             if (prot) return; // 나가!
             prot = 1; // 잠금!
             setTimeout(() => (prot = 0), 1200);
         } else {
             // 아니면 숨기기
-            pb.fadeOut(600);
-            ab.fadeOut(600);
+            pb.stop().fadeOut(600);
+            ab.stop().fadeOut(600);
             if (prot) return; // 나가!
             prot = 1; // 잠금!
             setTimeout(() => (prot = 0), 1200);

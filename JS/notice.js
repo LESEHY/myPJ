@@ -5,11 +5,10 @@ $(() => {
 
     function noticeAuto() {
         
-            $("#notice li").eq(0).fadeOut(500);
-            setTimeout(() => {
+            $("#notice li").eq(0).fadeOut(500,()=>{
                 notice.append($("#notice li").eq(0));
                 $("#notice li").eq(0).fadeIn(500);
-            }, 400);
+            });
     } // noticeAuto 함수
 
 
