@@ -202,7 +202,27 @@ body {
     transform: translate(10vw, -70%);
     width: 19.2%;
     height: 42.5%; 
-
+}
+.mtit2 {
+    align-items: center;
+    flex-direction: column;
+    transform: translate(10vw, -70%);
+    width: 19.2%;
+    height: 42.5%; 
+}
+.mtit3 {
+    align-items: center;
+    flex-direction: column;
+    transform: translate(10vw, -70%);
+    width: 19.2%;
+    height: 42.5%; 
+}
+.mtit4 {
+    align-items: center;
+    flex-direction: column;
+    transform: translate(10vw, -70%);
+    width: 19.2%;
+    height: 42.5%; 
 }
 
 /******************************** 배너 버튼 공통********************************/
