@@ -181,6 +181,9 @@ body {
 
 /****************** 배너 공통 ******************/
 .mtit,
+.mtit2,
+.mtit3,
+.mtit4,
 .madr1,
 .madr2,
 .madr3,
@@ -207,22 +210,22 @@ body {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 19.2%;
-    height: 42.5%; 
+    width: 17.5%; 
+    height: 27.3%;  
 }
 .mtit3 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 19.2%;
+    width: 19.2%; /* 498 / 113 */
     height: 42.5%; 
 }
 .mtit4 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 19.2%;
-    height: 42.5%; 
+     width: 19.2%; /*502 / 133*/
+    height: 42.5%;  
 }
 
 /******************************** 배너 버튼 공통********************************/
@@ -246,7 +249,7 @@ body {
 /* 배너 버튼 2 */
 .mbtn2 {
     border: 2px solid #1e3932;
-    transform: translate(16vw, 5vw);
+    transform: translate(15vw, 5vw);
 }
 
 /* 배너 버튼 3 */
@@ -331,34 +334,40 @@ body {
 
 /* 배너 음료 1 */
 .madr1 {
+    /* 308 / 454 */
     width: 17%;
     transform: translate(50vw, -40%);
 }
 
 /* 배너 음료 2 */
 .madr2 {
+    /* 259 / 377 */
     width: 15%;
     transform: translate(37vw, -60%);
 }
 
 /* 배너 음료 3 */
 .madr3 {
+    /* 200 / 367 */
     width: 11%;
     transform: translate(67vw, -60%);
 }
 
 /* 2번 배너 음료 1*/
 .madr4 {
+    width: 14.5%;
     transform: translate(55vw, -40%);
 }
 
 /* 2번 배너 음료 2 */
 .madr5 {
+    width: 14.3%;
     transform: translate(40vw, -55%);
 }
 
 /* 2번 배너 음료 3 */
 .madr6 {
+    width: 14.5%;
     transform: translate(70vw, -55%);
 }
 
