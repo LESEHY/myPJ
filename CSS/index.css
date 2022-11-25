@@ -221,14 +221,13 @@ body {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 19.2%; /*502 / 133*/
-    height: 42.5%;  
+    width: 26.4%; 
 }
 
 /******************************** 배너 버튼 공통********************************/
 .mbtn,
 .mbtn2,
-.mbtn3 {
+.mbtn3{
     width: 6.8%;
     height: 6.2%;
     background: none;
