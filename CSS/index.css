@@ -203,28 +203,25 @@ body {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 19.2%;
-    height: 42.5%; 
+    width: 16.7%;
 }
 .mtit2 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
     width: 17.5%; 
-    height: 27.3%;  
 }
 .mtit3 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 19.2%; /* 498 / 113 */
-    height: 42.5%; 
+    width: 26.2%;  
 }
 .mtit4 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-     width: 19.2%; /*502 / 133*/
+    width: 19.2%; /*502 / 133*/
     height: 42.5%;  
 }
 
@@ -243,7 +240,7 @@ body {
 /* 배너 버튼 1 */
 .mbtn {
     border: 2px solid #fff;
-    transform: translate(16vw, 5vw);
+    transform: translate(15vw, 5vw);
 }
 
 /* 배너 버튼 2 */
@@ -334,22 +331,20 @@ body {
 
 /* 배너 음료 1 */
 .madr1 {
-    /* 308 / 454 */
-    width: 17%;
+    width: 16.2%;
     transform: translate(50vw, -40%);
 }
 
 /* 배너 음료 2 */
 .madr2 {
-    /* 259 / 377 */
-    width: 15%;
+    width: 13.6%;
     transform: translate(37vw, -60%);
 }
 
 /* 배너 음료 3 */
 .madr3 {
     /* 200 / 367 */
-    width: 11%;
+    width: 10.5%;
     transform: translate(67vw, -60%);
 }
 
