@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* media.css */
+/* 1400 1340 1120 1020 960 930 */
 @media screen and (max-width: 1400px) {
     .logo {
         transform: translate(-50%, -50%);
@@ -28,3 +29,4 @@
         font-size: 16.5px;
     }
 }
+

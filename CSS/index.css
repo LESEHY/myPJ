@@ -145,11 +145,12 @@ body {
 
 
 /*이동버튼*/
-.abtn{
+.abtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
+
 .bgbox {
     position: absolute;
     bottom: 1vh;
@@ -157,15 +158,16 @@ body {
     /*Y축 중앙이동*/
     background-color: #fff;
     border-radius: 5vw;
-    width: min(153px,10vw);
+    width: min(153px, 10vw);
     padding-top: 4%;
 }
 
 .abtn {
     z-index: 99;
-    width: max(10px,1.1vw);
+    width: max(10px, 1.1vw);
 }
-.abtn img{
+
+.abtn img {
     width: 100%;
 }
 
@@ -205,29 +207,32 @@ body {
     transform: translate(10vw, -70%);
     width: 16.7%;
 }
+
 .mtit2 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 17.5%; 
+    width: 17.5%;
 }
+
 .mtit3 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 26.2%;  
+    width: 26.2%;
 }
+
 .mtit4 {
     align-items: center;
     flex-direction: column;
     transform: translate(10vw, -70%);
-    width: 26.4%; 
+    width: 26.4%;
 }
 
 /******************************** 배너 버튼 공통********************************/
 .mbtn,
 .mbtn2,
-.mbtn3{
+.mbtn3 {
     width: 6.8%;
     height: 6.2%;
     background: none;
@@ -264,7 +269,6 @@ body {
     padding-top: 4%;
     font-size: .9vw;
     transition: .5s;
-
 }
 
 /* 배너 버튼 텍스트 1*/
@@ -411,7 +415,8 @@ body {
     position: absolute;
     white-space: nowrap;
 }
-#notice li.on{
+
+#notice li.on {
     display: block;
 }
 
