@@ -3,19 +3,28 @@
 /* media.css */
 @media screen and (max-width: 1400px) {
     .logo {
-        transform: translateY(-50%) translate(-50%);
+        transform: translate(-50%, -50%);
     }
 
     .sh {
-        width: 80%;
-    }
-
-
-    .gnb>ul>li {
-        /* width: 180px; */
+        width: 75%;
     }
 
     .gnb>ul>li>a {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .logo {
+        transform: translate(-40%, -50%);
+    }
+
+    .sh {
+        width: 70%;
+    }
+
+    .gnb>ul>li>a {
+        font-size: 16.5px;
     }
 }
