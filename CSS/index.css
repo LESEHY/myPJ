@@ -56,6 +56,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
+
 }
 
 /* GNB박스 */
@@ -95,12 +96,22 @@ body {
     font-size: 1.5rem;
 }
 
-/* MENU, STORE 폰트 사이즈 */
-.sm>a {
-    font-size: 18px;
-    font-weight: bold;
+.motmenu{
+    display: none;
 }
 
+.motmenu>ul>li {
+    padding: 10px 12px;
+}
+
+.mclb {
+    display: flex;
+}
+
+.mclb img {
+    width: 25px;
+    height: 30px;
+}
 
 /* 소제목 */
 .h2t a {
@@ -439,7 +450,7 @@ body {
 
 }
 
-
+/* 공지사항 이미지 */
 .ntp img {
     width: 45px;
     height: 45px;
@@ -499,7 +510,6 @@ body {
 /* 스타벅스 유튜브 문구 2 */
 .ytxt2 {
     font-size: 17px;
-
 }
 
 /* 유튜브 이동버튼 */
@@ -614,6 +624,7 @@ body {
     display: flex;
     justify-content: center;
     line-height: 2.2;
+    flex-wrap: wrap;
 }
 
 /* 바로가기 메뉴 */
@@ -642,6 +653,7 @@ body {
 .f3 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     color: #999;
     font-size: 12px;
 }
@@ -651,7 +663,7 @@ body {
     color: #ccc;
     padding: 0 10px;
     line-height: 2;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     /* 줄바꿈방지 */
 }
 
@@ -699,7 +711,7 @@ body {
 .f3 li {
     padding: 0 1vw;
     line-height: 3;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     /* 줄바꿈방지 */
 }
 
@@ -711,7 +723,7 @@ body {
     font-style: normal;
     text-align: center;
     line-height: 4;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     /* 줄바꿈방지 */
 }
 

@@ -12,70 +12,45 @@
     display: flex;
     /* 수평방향 flex 중앙정렬 */
     justify-content: center;
-    /* width: 800px;
-      margin: 0 auto; -> flex에서 중앙정렬설정 안씀
-      outline: 1px solid red; */
+
 }
 
 /* 상위li 리스트요소 */
-.gnb > ul > li {
-    /* width: 180px; */
-    text-align: center;
+.sm {
     padding: 0 30px;
 }
 
-/* 상위 li.on에 가상요소로 하위메뉴 100%배경바 만들기 */
-.gnb > ul > li.sm::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    /* 부모는? - .gnb */
-    width: 100%;
-    height: 0;
-    /* 65px; */
-    background-color: #2c2a29;
-    z-index: -1;
-    /* .smenu 보다 아래! */
 
-    /* smenu와 동일 */
-    /* transition: height .4s ease-out; */
-}
 
-/* GNB 오버 시 뒤에 추가 색 보임*/
-.gnb > ul > li.sm:hover::after {
-    height: 450px;
-}
-
-/* li 상위메뉴 a요소 */
-.gnb > ul > li > a {
+/*  MENU, STORE 등 */
+.sm > a {
     /* a요소 확장 */
     display: block;
-
+    font-weight: bold;
     font-size: 17px;
-    line-height: 60px;
+    line-height: 50px;
     color: #000;
-    text-decoration: none;
+    /* text-decoration: none; */
     /* 트랜지션:속시이지 */
     transition: 0.3s;
 }
 
 /* MENU, STORE 색깔 변경 */
-.gnb > ul > li:hover > a {
+.sm:hover > a {
     color: #669900;
 }
-.gnb > ul > li:hover {
+.sm:hover {
     background-color: #2c2a29;
 }
 
 /* 상단 메뉴 글자에 밑줄애니 */
-.gnb > ul > li > a > span {
+.sm > a > span {
     position: relative;
     /* 부모자격 */
 }
 
 /*  MENU, STORE 가상요소로 밑줄넣기 */
-.gnb > ul > li > a > span::after {
+.sm > a > span::after {
     content: "";
     display: block;
     position: absolute;
@@ -91,55 +66,40 @@
 }
 
 /* MENU, STORE 오버시 가상요소 밑줄애니 */
-.gnb > ul > li:hover > a > span::after {
+.sm:hover > a > span::after {
     width: 100%;
     /* 오버시에 기다리는 시간 0.4초 */
     transition-delay: 0.4s;
 }
 
-/* 
-      [ 부모요소로 부터 상속되는 속성은 무엇인가? ]
-      글자체, 글자색, 글자크기, 글자정렬 등 글자관련속성들
-    */
-
 /* 서브메뉴 */
 .smenu {
     position: absolute;
     display: flex;
-    /* 메뉴 숨기기 높이값 0, overflow:hidden*/
     left: 50%;
     transform: translateX(-50%);
-    width: 800px; 
-    margin: 0 auto;
-    max-width: 100%;
     height: 0;
     overflow: hidden;
-    /* 주의: 숨기는 박스에 상하패딩이 있으면 완전히 숨길 수 없다! */
-    /* 상위메뉴 오버시 배경색과 동일 */
     background-color: #2c2a29;
 }
 
 /* GNB 오버 시 메뉴 보임 */
-.gnb > ul > li:hover .smenu {
-    height: 450px;
-    
-    /* 모든 하위메뉴 공통! */
+.sm:hover .smenu {
+    height: auto; 
+    padding: 10px 0;
+    width: 100%;
+
 }
 
 /* 서브메뉴 a */
 .smenu a {
     /* a요소 확장 */
     display: block;
-
     color: rgba(255, 255, 255, 0.8);
     font-size: 12px;
     line-height: 35px;
-
-    padding: 2px .6vw;
     margin: 1px 2vw;
     text-align: left;
-    /* 트랜지션 */
-    /* transition: .2s; */
 }
 
 /* 서브메뉴 오버시 밑줄*/
