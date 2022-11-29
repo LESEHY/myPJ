@@ -525,7 +525,6 @@ body {
     transform: translate(80%);
 }
 
-
 .ytbt a {
     color: #c4302b;
     font-weight: bold;
@@ -545,7 +544,11 @@ body {
 
 /* 유튜브 영상 박스 */
 .ytvideo {
-    width: 38%;
+    width: 40%;
+}
+
+.mytvideo{
+    display: none;
 }
 
 /* 유튜브 영상 */

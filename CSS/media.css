@@ -121,12 +121,15 @@
     .ytbn {
         padding-top: 30px;
     }
+    .ytb {
+        padding-left: 30px;
+    }
 
     .ytxt1 {
         font-size: 18px;
     }
     .ytxt2 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .ytbt {
@@ -142,4 +145,26 @@
         font-size: 28px;
     }
 }
+/* 930px */
+@media screen and (max-width: 930px) {
+    .ytb {
+        padding-left: 30px;
+    }
+    
+    .ytxt1{
+        font-size: 17px;
+    }
+    
+    .ytbt{  
+        display: none;
+    }
 
+    .ytvideo{
+        display: none;
+    }
+    .mytvideo{
+        text-align: center;
+        display: block;
+        background-color: #1e3932;
+    }
+}
