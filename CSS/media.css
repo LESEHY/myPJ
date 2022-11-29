@@ -155,16 +155,8 @@
         font-size: 17px;
     }
     
-    .ytbt{  
-        display: none;
-    }
-
-    .ytvideo{
-        display: none;
-    }
-    .mytvideo{
-        text-align: center;
-        display: block;
-        background-color: #1e3932;
+    .ytbt{
+        width: 159px;
+        height: 70px;
     }
 }
