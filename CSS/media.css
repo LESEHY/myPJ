@@ -178,7 +178,7 @@
     }
 
     body {
-        background: pink;
+        background: #fff;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         color: #000;
@@ -190,6 +190,7 @@
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
+        background-color: green;
     }
 
     .swiper-slide {
@@ -204,16 +205,15 @@
         width: 100%;
     }
 
-    .ytb {
-        padding-left: 30px;
+    .youtubeBox{
+        display: none;
     }
 
-    .ytxt1 {
-        font-size: 17px;
+    .appstBox {
+        display: none;
     }
 
-    .ytbt {
-        width: 159px;
-        height: 70px;
+    .mob{
+        display: block;
     }
 }

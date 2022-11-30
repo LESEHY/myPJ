@@ -96,7 +96,7 @@ body {
     font-size: 1.5rem;
 }
 
-.motmenu{
+.motmenu {
     display: none;
 }
 
@@ -127,7 +127,7 @@ body {
     overflow: hidden;
 }
 
-.swiper.mySwiper{
+.swiper.mySwiper {
     display: none;
 }
 
@@ -387,18 +387,7 @@ body {
     transform: translate(70vw, -55%);
 }
 
-/* 모바일(930px)배너 */
-.swiper-slide{
-    text-align: center;
-}
 
-.mbtxt{
-    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
-    font-size: 19px;
-    font-weight: bold;
-    color: green;
-
-}
 
 /**************************** 메인 2번째 ****************************/
 /* 공지사항 | 프로모션 라인 */
@@ -567,7 +556,7 @@ body {
     width: 40%;
 }
 
-.mytvideo{
+.mytvideo {
     display: none;
 }
 
@@ -583,6 +572,7 @@ body {
     display: flex;
     height: 536px;
     background-color: #ccc;
+
 }
 
 /* 앱 이미지 박스 */
@@ -627,8 +617,29 @@ body {
     height: 42px;
 }
 
+/***************************************** 모바일 용 *****************************************/
+/* 모바일(930px)배너 */
+.swiper-slide {
+    text-align: center;
+}
 
+.mbtxt {
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    font-size: 19px;
+    font-weight: bold;
+    color: pink;
+}
 
+.mob{
+    display: none;
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+.mob img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
