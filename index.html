@@ -9,16 +9,21 @@
     <link rel="shortcut icon" href="./img/상세/logo (1).png" type="image/x-icon" />
     <!-- 아이콘 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- 스와이퍼 CSS -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
     <!-- 메인 CSS -->
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/media.css">
     <!-- 제이쿼리 라이브러리 -->
     <script src="./JS/jquery-3.6.1.min.js"></script>
     <script src="./JS/jquery-ui.min.js"></script>
+    <!-- 스와이퍼 JS -->
+    <script src="./JS/swiper-bundle.min.js"></script>
     <!-- 메인 JS -->
-    <script src="./JS/main.js"></script>
+    <script src="./JS/mainb.js"></script>
     <script src="./JS/notice.js"></script>
     <script src="./JS/scroll.js"></script>
+    <script src="./JS/mob.js"></script>
 </head>
 
 <body>
@@ -36,8 +41,6 @@
             <div class="searchBox">
                 <input class="sh" type="text" placeholder="검색어를 입력하세요!">
             </div>
-
-            <div class="gb1"></div>
 
             <div class="gnbBox">
                 <!-- GNB -->
@@ -320,9 +323,48 @@
                 <a href="#" class="abtn ab2"><img src="./img/상세/right.png" alt="오른쪽 넘기기 버튼"></a>
             </div>
         </div>
-
-
+        
+        <div class="mbnBox">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span class="mbtxt">아이스 제주 금귤 민트 티</span>
+                        <a href=""><img src="./img/모바일배너/dk1.jpg " /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">아이스 오로라 캐모마일 릴렉서</span>
+                        <a href=""><img src="./img/모바일배너/dk2.jpg" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">오트 크림 스카치 콜드 브루</span>
+                        <a href=""><img src="./img/모바일배너/dk3.jpg" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">아이스 토피 넛 라떼</span>
+                        <a href=""><img src="./img/모바일배너/dk4.jpg" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">브라우니 치즈 케이크</span>
+                        <a href=""><img src="./img/모바일배너/cak1.jpg" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">너티 크루아상</span>
+                        <a href=""><img src="./img/모바일배너/cak2.jpg" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">산타 벨벳 치즈 케이크</span>
+                        <a href=""><img src="./img/모바일배너/cak3.jpg" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="mbtxt">부드러운 고구마 생크림 케이크</span>
+                        <a href=""><img src="./img/모바일배너/cak4.jpg" /></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
+
+
 
         <!-- 공지사항 | 프로모션 -->
         <div class="npline">

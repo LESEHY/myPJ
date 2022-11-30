@@ -9,7 +9,7 @@
 } */
 
 body {
-    padding-top: 123px;
+    padding-top: 120px;
 }
 
 #top {
@@ -18,7 +18,7 @@ body {
     width: 100%;
     background: #f6f5ef;
     border-bottom: 1px solid #e5e5e5;
-    border-top: 2px solid #000;
+    /* border-top: 2px solid #000; */
     /* overflow: hidden; */
     white-space: nowrap;
     /* 줄바꿈방지 */
@@ -120,10 +120,15 @@ body {
 }
 
 /*************************** 중앙 ***************************/
+
 /* 배너 옆으로 간 거 숨기기 */
 .bnBox {
     position: relative;
     overflow: hidden;
+}
+
+.swiper.mySwiper{
+    display: none;
 }
 
 /* 배너 배경*/
@@ -191,6 +196,8 @@ body {
 .ab2 {
     right: 10%;
 }
+
+
 
 /****************** 배너 공통 ******************/
 .mtit,
@@ -378,6 +385,19 @@ body {
 .madr6 {
     width: 14.5%;
     transform: translate(70vw, -55%);
+}
+
+/* 모바일(930px)배너 */
+.swiper-slide{
+    text-align: center;
+}
+
+.mbtxt{
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    font-size: 19px;
+    font-weight: bold;
+    color: green;
+
 }
 
 /**************************** 메인 2번째 ****************************/

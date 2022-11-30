@@ -25,6 +25,7 @@
         padding-top: 90px;
     }
 }
+
 /* 1340px */
 @media screen and (max-width: 1340px) {
     .logo {
@@ -38,13 +39,16 @@
     .gnb>ul>li>a {
         font-size: 16.5px;
     }
+
     .youtubeBox {
         height: 300px;
     }
+
     .appBox span {
         font-size: 38px;
     }
 }
+
 /* 1120px */
 @media screen and (max-width: 1120px) {
     .logo {
@@ -74,6 +78,7 @@
     .ytxt1 {
         font-size: 22px;
     }
+
     .ytxt2 {
         font-size: 16px;
     }
@@ -81,14 +86,16 @@
     .ytbt {
         transform: translate(50%);
     }
+
     .appBox span {
         font-size: 33px;
     }
-    
+
 }
+
 /* 960px */
 @media screen and (max-width: 960px) {
-    body{
+    body {
         padding-top: 70px;
     }
 
@@ -96,7 +103,7 @@
         height: 70px;
     }
 
-    .logo img{
+    .logo img {
         width: 45px;
         height: 45px;
     }
@@ -105,22 +112,26 @@
         display: none;
     }
 
-    .motmenu{
+    .motmenu {
         display: block;
     }
 
     .gnbBox {
         display: none;
     }
+
     .notice_tit {
         padding-left: 5%;
     }
+
     .youtubeBox {
         height: 220px;
     }
+
     .ytbn {
         padding-top: 30px;
     }
+
     .ytb {
         padding-left: 30px;
     }
@@ -128,6 +139,7 @@
     .ytxt1 {
         font-size: 18px;
     }
+
     .ytxt2 {
         font-size: 14px;
     }
@@ -135,27 +147,72 @@
     .ytbt {
         transform: translate(30%);
     }
+
     .appstBox {
         height: 505px;
     }
-    .phi img{
+
+    .phi img {
         width: 100%;
     }
+
     .appBox span {
         font-size: 28px;
     }
 }
+
 /* 930px */
 @media screen and (max-width: 930px) {
+    .bnBox {
+        display: none;
+    }
+
+    .swiper.mySwiper {
+        display: block;
+    }
+
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: pink;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 50px 0;
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
     .ytb {
         padding-left: 30px;
     }
-    
-    .ytxt1{
+
+    .ytxt1 {
         font-size: 17px;
     }
-    
-    .ytbt{
+
+    .ytbt {
         width: 159px;
         height: 70px;
     }
