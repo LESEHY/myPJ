@@ -662,9 +662,6 @@ body {
     transform: translateY(-50%);
 }
 
-.Box{
-    
-}
 
 .mobtit1{
     position: absolute;
@@ -673,6 +670,11 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+}
+
+.mobtn{
+    position: absolute;
+
 }
 
 
