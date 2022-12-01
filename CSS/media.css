@@ -163,6 +163,9 @@
 
 /* 930px */
 @media screen and (max-width: 930px) {
+    .mmb{
+        display: block;
+    }
     .bnBox {
         display: none;
     }
@@ -183,13 +186,13 @@
         font-size: 14px;
         color: #000;
         margin: 0;
-        padding: 50px 0;
+        padding: 70px 0;
     }
 
     .swiper {
         width: 100%;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 90px;
         background-color: green;
     }
 
@@ -214,6 +217,9 @@
     }
 
     .mob{
+        display: block;
+    }
+    .mob2{
         display: block;
     }
 }

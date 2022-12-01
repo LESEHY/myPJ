@@ -12,8 +12,7 @@ $(() => {
     console.log("스크롤 JS");
     $(window).scroll(() => {
         Top = $(this).scrollTop();
-
-
+        // console.log(Top);
         // 600보다 크거나 같으면 보이기
         if (Top > 550) {
             // console.log("dd");
@@ -29,8 +28,13 @@ $(() => {
             if (prot) return; // 나가!
             prot = 1; // 잠금!
             setTimeout(() => (prot = 0), 1200);
+
+
         }
-    })
+    }); // scroll
+
+
+    
 
 
 }); // JQB
