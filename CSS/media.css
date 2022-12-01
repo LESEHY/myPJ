@@ -266,3 +266,32 @@
         height: 60px;
     }
 }
+
+/* 640px */
+@media screen and (max-width:640px) {
+    .mob {
+        display: none;
+    }
+
+    .mob640 {
+        display: block;
+    }
+
+}
+
+
+/* 540px */
+@media screen and (max-width:540px) {
+    .searchBox {
+        width: 65%;
+    }
+
+    .sh {
+        width: 70%;
+    }
+
+    /* 공지내용 */
+    #notice {
+        padding-left: 10%;
+    }
+}
