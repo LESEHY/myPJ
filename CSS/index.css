@@ -412,9 +412,13 @@ body {
 }
 
 /* 공지사항 이미지 */
-.notice_tit img {
+.pnotice {
     width: 65px;
     height: 18px;
+}
+
+.mnotice{
+    display: none;
 }
 
 /* 공지내용 */
@@ -743,7 +747,7 @@ body {
 
 .mbtxt {
     font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
     color: pink;
 }

@@ -198,6 +198,9 @@
     }
 
     .swiper-slide {
+        /* 드래그 선택안되게 하기 */
+        user-select: none;
+        -webkit-user-drag: none;
         background-position: center;
         background-size: cover;
         width: 300px;
@@ -253,11 +256,9 @@
 
     /* 공지사항 더보기 */
     .ntp {
-        position: absolute;
         top: 25%;
         left: 90%;
         transform: translateY(-50%);
-
     }
 
     .prom {
@@ -277,6 +278,8 @@
         display: block;
     }
 
+    /* 하단 바꾸기 */
+
 }
 
 
@@ -293,5 +296,60 @@
     /* 공지내용 */
     #notice {
         padding-left: 10%;
+    }
+}
+
+/* 440px */
+@media screen and (max-width:440px) {
+    .searchBox {
+        width: 60%;
+    }
+
+    .pnotice {
+        display: none;
+    }
+
+    .mnotice {
+        display: block;
+    }
+
+    /* 공지내용 */
+    #notice {
+        padding-left: 8%;
+    }
+
+    #notice a {
+        font-size: 15px;
+    }
+
+    .ntp {
+        left: 83%;
+    }
+}
+
+/* 380px */
+@media screen and (max-width:380px) {
+    .searchBox {
+        width: 55%;
+    }
+}
+
+/* 280px */
+@media screen and (max-width:280px) {
+    .searchBox {
+        display: none;
+    }
+    .mnotice {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* 공지내용 */
+    #notice {
+        padding-left: 5%;
+    }
+
+    #notice a {
+        font-size: 12px;
     }
 }
