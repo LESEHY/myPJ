@@ -3,6 +3,7 @@
 @import url(./reset.css);
 @import url(./core.css);
 @import url(./nav.css);
+@import url(./mnav.css);
 
 /* body * {
     outline: 1px dashed gray;
@@ -111,6 +112,10 @@ body {
 .mclb img {
     width: 25px;
     height: 30px;
+}
+
+.mclb img:hover{
+    cursor: pointer;
 }
 
 /* 소제목 */
@@ -969,6 +974,10 @@ body {
     background: #2C2A29;
 }
 
+.mol{
+    display: none;
+}
+
 /* 바로가기 ol */
 .f1 ol {
     padding: 30px 4vw 80px;
@@ -1055,7 +1064,6 @@ body {
 .btns a {
     font-size: 12px;
     color: #fff;
-
 }
 
 .btns:hover a {

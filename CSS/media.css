@@ -120,6 +120,11 @@
         display: none;
     }
 
+    .mgnbBox{
+        display: none;
+    }
+    
+
     .notice_tit {
         padding-left: 5%;
     }
@@ -227,6 +232,21 @@
     .mob2 {
         display: block;
     }
+
+    /* 하단 */
+    .mol {
+        display: block;
+    }
+
+    .f1 ol {
+        padding: 30px 5vw 80px 25px;
+        width: calc(92% / 4);
+    }
+
+
+    .f1 li {
+        justify-content: left;
+    }
 }
 
 /* 770px */
@@ -266,6 +286,44 @@
         padding-top: 20px;
         height: 50px;
     }
+
+    /* 하단 */
+    .ulBox {
+        background: #645952;
+    }
+
+    .st {
+        background: #554c46 url(../img/모바일배너/m_down.png) no-repeat 98%/20px 11px;
+    }
+
+    .f1 li {
+        flex-direction: column
+    }
+
+
+    .st a:first-child {
+        padding: 10px;
+        color: #fff;
+    }
+
+    .f1 li>a {
+        font-size: 14px;
+        padding: 10px;
+        color: #e6dbd3;
+    }
+
+    .f1 ol {
+        padding: 0;
+        width: 100%;
+    }
+
+    .f2 {
+        padding: 50px 0;
+    }
+
+    .bt{
+        padding: 0 0 50px;
+    }
 }
 
 /* 640px */
@@ -277,9 +335,6 @@
     .mob640 {
         display: block;
     }
-
-    /* 하단 바꾸기 */
-
 }
 
 
@@ -296,6 +351,20 @@
     /* 공지내용 */
     #notice {
         padding-left: 10%;
+    }
+
+    /* 하단 */
+
+    .f1 li{
+        line-height: 25px;
+    }
+
+    .st a:first-child {
+        padding: 9.6px;
+    }
+
+    .f1 li>a {
+        padding: 8px;
     }
 }
 
@@ -331,6 +400,9 @@
 @media screen and (max-width:380px) {
     .searchBox {
         width: 55%;
+    }
+    .btns{
+        padding: 0;
     }
 }
 
