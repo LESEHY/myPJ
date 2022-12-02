@@ -17,38 +17,34 @@
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 40px;
     color: #fff;
     padding-top: 20px;
-    background: url(../img/모바일배너/m_down2.png)no-repeat 97%/21px 12px;
 }
 
 .msm a:hover{
     text-decoration: underline;
 }
-
+.msmenu li:first-child a{
+    font-size: 24px;
+    background: url(../img/모바일배너/m_down2.png)no-repeat 97%/21px 12px;
+}
 .msm>a {
     background: url(../img/모바일배너/m_down.png)no-repeat 97%/21px 12px;
     font-size: 28px;
     font-weight: bold;
 }
 
-
-.msmenu{
-   display: none;
-}
-
-.msm:hover .msmenu{
-    display: block;
-}
-
-.msm li~li{
+.msm ol li{
     display: none;
 }
 
-.msm a:hover ~li{
-    
+.msm:hover ol li:first-child{
+    display: block;
+}
+
+.mlif:hover ~li{
     display: block;
 }
 
