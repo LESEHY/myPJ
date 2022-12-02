@@ -754,6 +754,7 @@ body {
 
 /*  모바일(930px이하)용 배너 1  */
 .mob {
+    display: none;
     overflow: hidden;
     height: 43vw;
     flex-shrink: 0;
