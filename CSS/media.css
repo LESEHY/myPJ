@@ -234,14 +234,14 @@
 
     /* 공지사항 | 프로모션 라인 */
     .npline {
-        height: 200px;
+        height: 140px;
         flex-direction: column;
     }
 
     .notice_box {
         width: 100%;
-        padding-top: 40px;
-        height: 60px;
+        padding-top: 20px;
+        height: 50px;
     }
 
     /* 공지내용 */
@@ -263,8 +263,8 @@
 
     .prom {
         width: 100%;
-        padding-top: 40px;
-        height: 60px;
+        padding-top: 20px;
+        height: 50px;
     }
 }
 
@@ -339,6 +339,11 @@
     .searchBox {
         display: none;
     }
+
+    .swiper {
+        padding-bottom: 0px;
+    }
+
     .mnotice {
         width: 28px;
         height: 28px;
