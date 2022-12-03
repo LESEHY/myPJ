@@ -9,6 +9,19 @@
     z-index: 9999;
 }
 
+.close{
+    position: absolute;
+    background-color: #000;
+    top: 47px;
+    left: -50px;
+    z-index: 99999;
+    transition: 1s;
+}
+
+.close:hover{
+    transform: rotate(180deg);
+}
+
 .mgnb{
     padding-top: 70px;
 }
