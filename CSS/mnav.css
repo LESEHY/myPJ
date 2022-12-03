@@ -9,9 +9,22 @@
     z-index: 9999;
 }
 
+.starimg{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.starimg img{
+    width: 284px;
+    object-fit: cover;
+}
+
 .close{
     position: absolute;
-    background-color: #000;
+    cursor: pointer;
+    /* background-color: #000; */
     top: 47px;
     left: -50px;
     z-index: 99999;
@@ -56,12 +69,3 @@
 .msm ol li{
     display: none;
 }
-
-/* .msm:hover ol li:first-child{
-    display: block;
-} */
-
-/* .mlif:hover ~li{
-    display: block;
-} */
-
