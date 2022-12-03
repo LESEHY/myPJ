@@ -44,11 +44,11 @@
     display: none;
 }
 
-.msm:hover ol li:first-child{
+/* .msm:hover ol li:first-child{
     display: block;
-}
+} */
 
-.mlif:hover ~li{
+/* .mlif:hover ~li{
     display: block;
-}
+} */
 
