@@ -788,6 +788,7 @@ body {
     width: 100%;
     left: -30%;
     top: 50%;
+    transition: 2s;
 }
 
 .cb2Box.on {
@@ -806,6 +807,7 @@ body {
     top: 45%;
     width: 35%;
     right: -40%;
+    transition: 2s;
 }
 
 .Box.on {
@@ -915,6 +917,11 @@ body {
     position: absolute;
     width: 100%;
     left: 50%;
+    top: -45%;
+    transition: 2s;
+}
+
+.cb2640.on{
     top: 15%;
 }
 

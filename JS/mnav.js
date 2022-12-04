@@ -1,4 +1,4 @@
-// link.js
+// mnav.js
 $(() => {
     const ham = $("#ham");
     const idtop = $("#top");
@@ -135,7 +135,7 @@ $(() => {
     });
 
     /* STARBUCKS REWARDS 클릭하면 하위 나옴 */
-    $(".msm a:contains('STARBUCKS REWARDS')").click(() => {
+    $(".msm a:contains('Starbucks Rewards')").click(() => {
         // toggle() 보이면 안보이게, 안보이면 보이게
         if (prot) return; // 나가!
         prot = 1; // 잠금!
@@ -194,6 +194,16 @@ $(() => {
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
         $(".mlif17 .li5 ~li").toggle(200)
+    });
+
+    /* 마우스 오버 후 3초 뒤 실행 */
+    $(window).mouseover(()=>{
+        setTimeout(() => {
+            $(".cb2Box").addClass("on");
+            $(".Box").addClass("on");
+            $(".cb2640").addClass("on");
+            
+        }, 2000);
     });
 
 }); // JQB

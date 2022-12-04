@@ -10,14 +10,12 @@
 }
 
 .starimg{
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
+   text-align: center;
+   padding-top: 50px;
 }
 
 .starimg img{
-    width: 284px;
+    width: 70%;
     object-fit: cover;
 }
 

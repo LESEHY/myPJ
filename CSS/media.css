@@ -120,10 +120,10 @@
         display: none;
     }
 
-    .mgnbBox{
+    .mgnbBox {
         display: none;
     }
-    
+
 
     .notice_tit {
         padding-left: 5%;
@@ -321,7 +321,7 @@
         padding: 50px 0;
     }
 
-    .bt{
+    .bt {
         padding: 0 0 50px;
     }
 }
@@ -335,6 +335,20 @@
     .mob640 {
         display: block;
     }
+
+    .msm a {
+        font-size: 16px;
+    }
+
+    .msmenu li:first-child a {
+        font-size: 20px;
+    }
+
+    .msm>a {
+        font-size: 24px;
+    }
+
+
 }
 
 
@@ -353,9 +367,21 @@
         padding-left: 10%;
     }
 
+    .msm a {
+        font-size: 13px;
+    }
+
+    .msmenu li:first-child a {
+        font-size: 16px;
+    }
+
+    .msm>a {
+        font-size: 18px;
+    }
+
     /* 하단 */
 
-    .f1 li{
+    .f1 li {
         line-height: 25px;
     }
 
@@ -394,6 +420,16 @@
     .ntp {
         left: 83%;
     }
+
+    .mgnb{
+        padding-top: 10px;
+    }
+
+    .msm{
+        padding: 15px 10px;
+    }
+
+    
 }
 
 /* 380px */
@@ -401,8 +437,28 @@
     .searchBox {
         width: 55%;
     }
-    .btns{
+
+    .btns {
         padding: 0;
+    }
+
+    .msm a {
+        font-size: 13px;
+    }
+
+    .msmenu li:first-child a {
+        font-size: 16px;
+    }
+
+    .msm>a {
+        font-size: 16px;
+    }
+    .mgnb{
+        padding-top: 0px;
+    }
+
+    .msm{
+        padding: 10px 10px;
     }
 }
 
@@ -428,5 +484,24 @@
 
     #notice a {
         font-size: 12px;
+    }
+
+    .msm a {
+        font-size: 13px;
+    }
+
+    .msmenu li:first-child a {
+        font-size: 16px;
+    }
+
+    .msm>a {
+        font-size: 16px;
+    }
+    .mgnb{
+        padding-top: 0px;
+    }
+
+    .msm{
+        padding: 10px 10px;
     }
 }
