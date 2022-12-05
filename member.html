@@ -12,7 +12,7 @@
     <!-- 스와이퍼 CSS -->
     <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
     <!-- 메인 CSS -->
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/media.css">
     <!-- 제이쿼리 라이브러리 -->
     <script src="./JS/jquery-3.6.1.min.js"></script>
@@ -235,7 +235,7 @@
             <aside class="tmenu">
                 <ul class="clb">
                     <li>
-                        <a href="./login.html">로그인</a>
+                        <a href="#">로그인</a>
                     </li>
                     <li>
                         <a href="#">회원가입</a>
@@ -252,7 +252,7 @@
             <div class="motmenu">
                 <ul class="mclb">
                     <li id="signin">
-                        <a href="./login.html">
+                        <a href="#">
                             <img src="./img/배너/m_user.png" alt="유저">
                         </a>
                     </li>
@@ -460,244 +460,8 @@
             </ul>
         </nav>
     </div> <!-- 모바일 GNB -->
-    <!-- 중앙 -->
-    <main class="ct">
-        <div class="bnBox">
-            <ul id="slide">
-                <!-- 1번 배너 -->
-                <li data-seq>
-                    <img class="mbg" src="./img/상세/main_bg.jpg" alt="배너 1">
-                    <img class="mtit" src="./img/상세/main_title.png" alt="TRICK OR TREAT">
-                    <button class="mbtn">
-                        <a href="https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=2069">
-                            자세히보기
-                        </a>
-                    </button>
-                    <img class="madr1" src="./img/상세/main_drink_01.png" alt="할로윈 초코 헤이즐넛 프라푸치노">
-                    <img class="madr2" src="./img/상세/main_drink_02.png" alt="할로윈 매직 유스베리 티">
-                    <img class="madr3" src="./img/상세/main_drink_03.png" alt="할로윈 블랙 글레이즈드 라떼">
-                </li>
-                <!-- 2번 배너 -->
-                <li data-seq>
-                    <img class="mbg" src="./img/상세/main_bg_02.jpg" alt="배너 2">
-                    <img class="mtit2" src="./img/상세/Amain_title.png" alt="AROUND AUTUMN, AROUND US">
-                    <button class="mbtn2">
-                        <a href="">
-                            자세히보기
-                        </a>
-                    </button>
-                    <img class="madr4" src="./img/상세/Amdrink_01.png" alt="블랙 글레이즈드 라떼">
-                    <img class="madr5" src="./img/상세/Amdrink_02.png" alt="그린 애플 케모마일 티">
-                    <img class="madr6" src="./img/상세/Amdrink_03.png" alt="호두 블랙 티 라떼">
-                </li>
-                <!-- 3번 배너 -->
-                <li data-seq>
-                    <img class="mbg" src="./img/상세/cup.jpg" alt="배너 3">
-                    <img class="mtit3" src="./img/상세/cup_txt.png" alt="RWANDA">
-                    <button class="mbtn3">
-                        <a href="">
-                            자세히보기
-                        </a>
-                    </button>
-                </li>
-                <!-- 4번 배너 -->
-                <li data-seq>
-                    <img class="mbg" src="./img/상세/christmas_bg_.jpg" alt="배너 4">
-                    <img class="mtit4" src="./img/상세/christmas_title.png" alt="CHRISTMAS">
-                    <button class="mbtn3">
-                        <a href="">
-                            자세히보기
-                        </a>
-                    </button>
-                </li>
-            </ul>
-            <div class="bgbox">
-                <!-- 이동버튼 -->
-                <a href="#" class="abtn ab1"><img src="./img/상세/left.png" alt="왼쪽 넘기기 버튼"></a>
-                <a href="#" class="abtn ab2"><img src="./img/상세/right.png" alt="오른쪽 넘기기 버튼"></a>
-            </div>
-        </div>
-
-        <!-- 모바일 용 메인 배너 -->
-        <div class="mmb">
-            <div class="mmbBox">
-                <img class="mmb1" src="./img/모바일배너/m_mb1.png" alt="모바일 메인 배너">
-                <div class="mtxt">
-                    <img src="./img/모바일배너/m_mbtxt.png" alt="BRIGHTEN YOUR HOLIDAYS">
-                </div>
-                <div class="mmd1">
-                    <img src="./img/모바일배너/m_md1.png" alt="제주 금귤 민트 티">
-                </div>
-                <div class="mmd2">
-                    <img src="./img/모바일배너/m_md2.png" alt="오로라 캐모마일 릴렉서">
-                </div>
-                <div class="mmd3">
-                    <img src="./img/모바일배너/m_md3.png" alt="토피 넛 라떼">
-                </div>
-                <div class="mmd4">
-                    <img src="./img/모바일배너/m_md4.png" alt="오트 크림 스카치 콜드 브루">
-                </div>
-                <button class="mmbtn"><a href="">자세히보기</a></button>
-            </div>
-        </div>
-
-        <div class="mbnBox">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <span class="mbtxt">아이스 제주 금귤 민트 티</span>
-                        <a href=""><img src="./img/모바일배너/dk1.jpg " /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">아이스 오로라 캐모마일 릴렉서</span>
-                        <a href=""><img src="./img/모바일배너/dk2.jpg" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">오트 크림 스카치 콜드 브루</span>
-                        <a href=""><img src="./img/모바일배너/dk3.jpg" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">아이스 토피 넛 라떼</span>
-                        <a href=""><img src="./img/모바일배너/dk4.jpg" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">브라우니 치즈 케이크</span>
-                        <a href=""><img src="./img/모바일배너/cak1.jpg" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">너티 크루아상</span>
-                        <a href=""><img src="./img/모바일배너/cak2.jpg" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">산타 벨벳 치즈 케이크</span>
-                        <a href=""><img src="./img/모바일배너/cak3.jpg" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <span class="mbtxt">부드러운 고구마 생크림 케이크</span>
-                        <a href=""><img src="./img/모바일배너/cak4.jpg" /></a>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
 
 
-
-        <!-- 공지사항 | 프로모션 -->
-        <div class="npline">
-            <div class="notice_box">
-                <div class="notice_tit">
-                    <img class="pnotice" src="./img/배너/notice.png" alt="공지사항">
-                    <img class="mnotice" src="./img/모바일배너/m_notice.png" alt="모바일 공지사항">
-                </div>
-                <!-- 공지사항 내용 -->
-                <ul id="notice">
-                    <li class="on">
-                        <a href="#">홈페이지 이용약관 개정 안내</a>
-                    </li>
-                    <li>
-                        <a href="#">시스템 개선 및 점검 안내</a>
-                    </li>
-                    <li>
-                        <a href="#">시스템 개선 및 서비스 점검 안내</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- 공지사항 더보기 이미지 -->
-            <div class="ntp">
-                <a href="#">
-                    <img src="./img/배너/notice+.png" alt="공지사항 더보기">
-                </a>
-            </div>
-            <!-- 프로모션 -->
-            <div class="prom">
-                <a href="#">
-                    <img src="./img/상세/prom.png" alt="프로모션">
-                </a>
-            </div>
-        </div>
-        <!-- 스타벅스 유튜브 -->
-        <div class="youtubeBox">
-            <div class="ytbn">
-                <img src="./img/상세/logo2.png" alt="스타벅스 로고">
-                <div class="ytb">
-                    <span class="ytxt1">스타벅스만의 특별한 영상, 스타벅스 유튜브</span>
-                    <span class="ytxt2">구독을 통해 다양한 영상을 확인해보세요.</span>
-                    <button class="ytbt">
-                        <a href="https://www.youtube.com/@starbuckskorea">
-                            YouTube
-                        </a>
-                    </button>
-                </div>
-            </div>
-            <div class="ytvideo">
-                <iframe src="https://www.youtube.com/embed/XEoZJFWj7_Y?autoplay=1&mute=1&loop=1&playlist=XEoZJFWj7_Y"
-                    allow="autoplay"></iframe>
-            </div>
-        </div>
-
-        <!-- 모바일(930px이하)용 배너 1 -->
-        <div class="mob">
-            <div id="mobBox">
-                <img class="mobimg" src="./img/모바일배너/m_cb1.jpg" alt="크리스마스 블렌드 배너">
-                <div class="cb2Box">
-                    <img class="mobtit" src="./img/모바일배너/m_cb2.png" alt="크리스마스 블렌드 사진">
-                </div>
-                <div class="Box">
-                    <img class="mobtit1" src="./img/모바일배너/m_cb3.png" alt="크리스마스 블렌드 문구">
-                    <button class="mobtn"><a href="">자세히보기</a></button>
-                </div>
-            </div>
-        </div>
-
-        <!--  모바일(640px 이하)용 배너 1 -->
-        <div class="mob640">
-            <div id="m640Box">
-                <img class="m640img" src="./img/모바일배너/m_cb7.jpg" alt="640px 크리스마스 블렌드 배너">
-                <div class="cb2640">
-                    <img class="mtit640" src="./img/모바일배너/m_cb2.png" alt="640px 크리스마스 블렌드 사진">
-                </div>
-                <div class="Box640">
-                    <img class="m640tit" src="./img/모바일배너/m_cb4.png" alt="640px 크리스마스 블렌드 문구">
-                    <button class="mbtn640"><a href="">자세히보기</a></button>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- 모바일(930px이하)용 배너 2 -->
-        <div class="mob2">
-            <img src="./img/모바일배너/m_cb5.jpg" alt="starbuck reserve">
-            <button class="mobtn2"><a href="">자세히보기</a></button>
-        </div>
-
-        <!-- 스타벅스 앱 -->
-        <div id="pg1" class="appstBox scAct">
-            <div class="phoneBox">
-                <div class="phi">
-                    <img src="./img/배너/phone_img.png" alt="스타벅스 앱 광고">
-                </div>
-            </div>
-
-            <div class="appBox">
-                <span>
-                    새롭게 바뀐 스타벅스 앱을 만나보세요!
-                </span>
-                <div class="store">
-                    <a href="#">
-                        <img class="google" src="./img/배너/google-play.png" alt="구글 플레이스토어">
-                    </a>
-                    <a href="#">
-                        <img class="apple" src="./img/배너/App_Store.png" alt="앱스토어">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </main>
     <!-- 하단 -->
     <div id="info">
         <footer class="ft">

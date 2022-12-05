@@ -374,6 +374,10 @@
         right: 18%;
     }
 
+    .mgnb {
+        padding-top: 0px;
+    }
+
     /* 공지내용 */
     #notice {
         padding-left: 10%;
@@ -414,6 +418,10 @@
 
     .starimg{
         display: none;
+    }
+
+    .msearch{
+        display: block;
     }
 
     .pnotice {

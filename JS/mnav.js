@@ -79,7 +79,7 @@ $(() => {
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
         $(".li2").toggle(300);
-        $(".ol .li2 ~li").hide()
+        $(".li2 ~li").hide()
     });
 
     $(".mlif6>li").click(() => {
@@ -103,7 +103,7 @@ $(() => {
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
         $(".li3").toggle(300);
-        $(".ol .li3 ~li").hide()
+        $(".li3 ~li").hide()
     });
 
     $(".mlif8>li").click(() => {
@@ -141,7 +141,7 @@ $(() => {
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
         $(".li4").toggle(300);
-        $(".ol .li4 ~li").hide()
+        $(".li4 ~li").hide()
     });
 
     $(".mlif12>li").click(() => {
@@ -172,7 +172,7 @@ $(() => {
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
         $(".li5").toggle(350);
-        $(".ol .li5 ~li").hide()
+        $(".li5 ~li").hide()
     });
 
     $(".mlif15>li").click(() => {

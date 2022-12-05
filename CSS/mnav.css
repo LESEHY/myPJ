@@ -20,6 +20,7 @@
 }
 
 .msearch {
+    display: none;
     padding-top: 30px;
     text-align: center;
 }
@@ -39,8 +40,6 @@
     color: #fff;
     
 }
-
-
 
 .close {
     position: absolute;
@@ -80,8 +79,13 @@
 
 .msmenu li:first-child a {
     font-size: 24px;
+}
+
+.bgi a {
+    font-size: 24px;
     background: url(../img/모바일배너/m_down2.png)no-repeat 97%/21px 12px;
 }
+
 
 .msm>a {
     background: url(../img/모바일배너/m_down.png)no-repeat 97%/21px 12px;
