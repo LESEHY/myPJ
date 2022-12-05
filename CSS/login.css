@@ -16,6 +16,7 @@
 }
 
 .log{
+    /* width: 100%; */
     width: 570px;
     height: 497.38px;
     margin: 0 auto;
@@ -86,6 +87,7 @@
 
 .login_btn_wrap ul{
     display: flex;
+    padding-top: 10px;
 }
 
 
