@@ -540,6 +540,10 @@ body {
 }
 
 .ytbt a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
     color: #c4302b;
     font-weight: bold;
     font-size: 24px;
