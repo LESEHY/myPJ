@@ -21,7 +21,7 @@
 }
 
 /*  MENU, STORE 등 */
-.sm > a {
+.sm>a {
     /* a요소 확장 */
     display: block;
     font-weight: bold;
@@ -34,21 +34,22 @@
 }
 
 /* MENU, STORE 색깔 변경 */
-.sm:hover > a {
+.sm:hover>a {
     color: #669900;
 }
+
 .sm:hover {
     background-color: #2c2a29;
 }
 
 /* 상단 메뉴 글자에 밑줄애니 */
-.sm > a > span {
+.sm>a>span {
     position: relative;
     /* 부모자격 */
 }
 
 /*  MENU, STORE 가상요소로 밑줄넣기 */
-.sm > a > span::after {
+.sm>a>span::after {
     content: "";
     display: block;
     position: absolute;
@@ -64,7 +65,7 @@
 }
 
 /* MENU, STORE 오버시 가상요소 밑줄애니 */
-.sm:hover > a > span::after {
+.sm:hover>a>span::after {
     width: 100%;
     /* 오버시에 기다리는 시간 0.4초 */
     transition-delay: 0.4s;
@@ -83,7 +84,7 @@
 
 /* GNB 오버 시 메뉴 보임 */
 .sm:hover .smenu {
-    height: auto; 
+    height: auto;
     padding: 10px 0;
     width: 100%;
 
@@ -106,4 +107,6 @@
 
 }
 
-
+.smenu ol {
+    transform: translateX(100%);
+}
