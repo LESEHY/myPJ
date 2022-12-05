@@ -59,6 +59,10 @@
         width: 55%;
     }
 
+    .icse{
+        right: 24%;
+    }
+
     .gnb>ul>li>a {
         font-size: 15px;
     }
@@ -106,6 +110,10 @@
     .logo img {
         width: 45px;
         height: 45px;
+    }
+
+    .icse{
+        top: 30%;
     }
 
     .tmenu {
@@ -362,6 +370,10 @@
         width: 70%;
     }
 
+    .icse{
+        right: 18%;
+    }
+
     /* 공지내용 */
     #notice {
         padding-left: 10%;
@@ -397,7 +409,11 @@
 /* 440px */
 @media screen and (max-width:440px) {
     .searchBox {
-        width: 60%;
+        display: none;
+    }
+
+    .starimg{
+        display: none;
     }
 
     .pnotice {
@@ -434,10 +450,6 @@
 
 /* 380px */
 @media screen and (max-width:380px) {
-    .searchBox {
-        width: 55%;
-    }
-
     .btns {
         padding: 0;
     }
@@ -464,9 +476,6 @@
 
 /* 280px */
 @media screen and (max-width:280px) {
-    .searchBox {
-        display: none;
-    }
 
     .swiper {
         padding-bottom: 0px;

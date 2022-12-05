@@ -1,4 +1,4 @@
-.mgnbBox{
+.mgnbBox {
     display: none;
     position: fixed;
     top: 0;
@@ -9,17 +9,40 @@
     z-index: 9999;
 }
 
-.starimg{
-   text-align: center;
-   padding-top: 50px;
+.starimg {
+    text-align: center;
+    padding-top: 50px;
 }
 
-.starimg img{
+.starimg img {
     width: 70%;
     object-fit: cover;
 }
 
-.close{
+.msearch {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.msh {
+    width: 142px;
+    height: 24px;
+}
+
+.btsh {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    background: #666;
+    border-radius: 3px;
+    color: #fff;
+    
+}
+
+
+
+.close {
     position: absolute;
     cursor: pointer;
     /* background-color: #000; */
@@ -29,19 +52,19 @@
     transition: 1s;
 }
 
-.close:hover{
+.close:hover {
     transform: rotate(180deg);
 }
 
-.mgnb{
+.mgnb {
     padding-top: 70px;
 }
 
-.msm{
+.msm {
     padding: 30px 30px;
 }
 
-.msm a{
+.msm a {
     display: block;
     width: 100%;
     height: 100%;
@@ -51,19 +74,21 @@
     padding-top: 20px;
 }
 
-.msm a:hover{
+.msm a:hover {
     text-decoration: underline;
 }
-.msmenu li:first-child a{
+
+.msmenu li:first-child a {
     font-size: 24px;
     background: url(../img/모바일배너/m_down2.png)no-repeat 97%/21px 12px;
 }
+
 .msm>a {
     background: url(../img/모바일배너/m_down.png)no-repeat 97%/21px 12px;
     font-size: 28px;
     font-weight: bold;
 }
 
-.msm ol li{
+.msm ol li {
     display: none;
 }

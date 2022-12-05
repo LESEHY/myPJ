@@ -39,6 +39,7 @@ body {
 
 /* 검색창 둘러싼 박스 */
 .searchBox {
+    position: relative;
     width: 80%;
     padding-top: 15px;
     text-align: center;
@@ -51,6 +52,14 @@ body {
     border-radius: 25px;
     text-align: center;
 }
+
+.icse{
+    position: absolute;
+    cursor: pointer;
+    top: 18%;
+    right: 16%;
+}
+
 
 /* 로그인|회원가입 등 박스 */
 .menuBox {
