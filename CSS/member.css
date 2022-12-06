@@ -8,6 +8,7 @@
 }
 
 .memBox {
+    position: relative;
     max-width: 700px;
     border: 1px solid #ddd;
     margin: 0 auto;
@@ -25,38 +26,41 @@
     border-bottom: 1px solid #ddd;
 }
 
-.input{
+.input {
     border-bottom: 1px solid #ddd;
 }
 
-.id, .pw, .pwc{
+.id,
+.pw,
+.pwc {
     padding: 20px 50px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
-#idtxt, #pwtxt{
+#idtxt,
+#pwtxt {
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
 }
 
-.name{
+.name {
     padding: 20px;
     font-size: 18px;
 }
 
-strong span{
+strong span {
     color: #006241;
 }
 
-.nametxt{
+.nametxt {
     display: flex;
     padding: 0px 20px 20px;
     border-bottom: 1px solid #ddd;
 }
 
-.nt{
+.nt {
     background: #f4f4f2;
     border: 1px solid #ddd;
     box-sizing: border-box;
@@ -67,12 +71,12 @@ strong span{
 }
 
 .user_gender {
-border: 1px solid #b0b0b0;
-border-radius: 3px;
-float: left;
-margin-left: 2%;
-overflow: hidden;
-width: 22.711%;
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    width: 22.711%;
 }
 
 .user_gender a.on {
@@ -85,6 +89,7 @@ width: 22.711%;
     box-sizing: border-box;
     width: 50%;
 }
+
 .user_gender a {
     color: #b0b0b0;
     display: block;
@@ -95,30 +100,56 @@ width: 22.711%;
     font-size: 16px;
 }
 
-.phone{
+.phone {
     padding: 20px;
     font-size: 18px;
 }
 
-.phtxt{
+.phtxt {
     display: flex;
     padding: 0px 20px 20px;
     border-bottom: 1px solid #ddd;
 }
 
-.icwar{
+.icwar {
     width: 26px;
     height: 26px;
 }
 
-.lastxt{
+.ictxt {
+    position: absolute;
+    width: 96%;
+    left: 2%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.ictxt ul{
+    padding: 20px 0 0 20px;
+}
+
+.ictxt li{
+    padding-top: 5px;
+}
+
+.ictxt span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ictxt li {
+    color: #111;
+    font-size: 14px;
+}
+
+.lastxt {
     text-align: center;
     font-weight: bold;
     font-size: 14px;
     padding: 60px 0 0;
 }
 
-.button{
+.button {
     margin: 0 auto;
     max-width: 680px;
     padding: 10px 0 50px;
