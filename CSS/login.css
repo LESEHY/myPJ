@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-#loginBox{
+#loginBox {
     width: 100%;
     background: url(../img/모바일배너/login_bg.jpg) center top no-repeat fixed #0a0807;
     background-size: cover;
     padding-bottom: 50px;
 }
 
-.login{
+.login {
     padding: 50px 0 30px;
     text-align: center;
     font-weight: lighter;
@@ -15,15 +15,15 @@
     color: #fff;
 }
 
-.log{
-    /* width: 100%; */
-    width: 570px;
-    height: 497.38px;
+
+.log {
+    max-width: 570px;
+    height: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
 
-.hi{
+.hi {
     margin: 0;
     padding: 30px 0;
     border-bottom: 1px solid #ddd;
@@ -32,21 +32,24 @@
     font-size: 18px;
 }
 
-.hi span{
+.hi span {
     color: #006633;
 }
 
-.warpBox{
+.warpBox {
     padding-left: 24px;
 }
 
-.idBox{
+.idBox {
     padding-top: 20px;
 }
-.pwBox{
+
+.pwBox {
     padding-top: 10px;
 }
-#idtxt, #pwtxt{
+
+#idtxt,
+#pwtxt {
     width: 95%;
     padding: 15px;
     box-sizing: border-box;
@@ -54,19 +57,19 @@
     border-radius: 3px;
 }
 
-.chk{
+.chk {
     padding: 10px 0 30px;
     font-size: 16px;
 }
 
-.logbtn{
-    width: 530px;
+.logbtn {
+    width: 95%;
     height: 65px;
     background: #006633;
     border-radius: 3px;
 }
 
-.logbtn a{
+.logbtn a {
     display: block;
     font-size: 24px;
     line-height: 63px;
@@ -75,9 +78,9 @@
     color: #fff;
 }
 
-.war{
-    color: #006633; 
-    width: 518px;
+.war {
+    color: #006633;
+    max-width: 518px;
     font-size: 14px;
     line-height: 1.4;
     margin: 15px 0 0;
@@ -85,18 +88,19 @@
 }
 
 
-.login_btn_wrap ul{
+.login_btn_wrap ul {
     display: flex;
     padding-top: 10px;
 }
 
 
-.login_btn_wrap li{  
+.login_btn_wrap li {
     position: relative;
     width: 189.8px;
     height: 54px;
     text-align: center;
 }
+
 .login_btn_wrap ul li:after {
     border-right: 3px solid #ddd;
     color: #666;
@@ -112,7 +116,7 @@
     border-right: 0;
 }
 
-.login_btn_wrap a{
+.login_btn_wrap a {
     display: block;
     width: 100%;
     height: 100%;

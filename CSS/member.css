@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+
+.memtxt {
+    padding: 70px 0 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.memBox {
+    max-width: 700px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+.memimg {
+    text-align: center;
+    padding: 30px 20px 0;
+}
+
+.txtmem {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.input{
+    border-bottom: 1px solid #ddd;
+}
+
+.id, .pw, .pwc{
+    padding: 20px 50px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#idtxt, #pwtxt{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.name{
+    padding: 20px;
+    font-size: 18px;
+}
+
+strong span{
+    color: #006241;
+}
+
+.nametxt{
+    display: flex;
+    padding: 0px 20px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nt{
+    background: #f4f4f2;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 14px;
+    width: 49%;
+}
+
+.user_gender {
+border: 1px solid #b0b0b0;
+border-radius: 3px;
+float: left;
+margin-left: 2%;
+overflow: hidden;
+width: 22.711%;
+}
+
+.user_gender a.on {
+    background: #f4f4f2;
+    color: #222;
+}
+
+.user_gender a.male {
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 50%;
+}
+.user_gender a {
+    color: #b0b0b0;
+    display: block;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+    width: 50%;
+    font-size: 16px;
+}
+
+.phone{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.phtxt{
+    display: flex;
+    padding: 0px 20px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.icwar{
+    width: 26px;
+    height: 26px;
+}
+
+.lastxt{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 60px 0 0;
+}
+
+.button{
+    margin: 0 auto;
+    max-width: 680px;
+    padding: 10px 0 50px;
+}
+
+.membtn {
+    width: 100%;
+    box-sizing: border-box;
+    height: 65px;
+    background: #006633;
+    border-radius: 3px;
+}
+
+.membtn a {
+    display: block;
+    font-size: 24px;
+    line-height: 63px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}

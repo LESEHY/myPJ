@@ -12,7 +12,8 @@
     <!-- 스와이퍼 CSS -->
     <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
     <!-- 메인 CSS -->
-    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/member.css">
     <link rel="stylesheet" href="CSS/media.css">
     <!-- 제이쿼리 라이브러리 -->
     <script src="./JS/jquery-3.6.1.min.js"></script>
@@ -235,10 +236,10 @@
             <aside class="tmenu">
                 <ul class="clb">
                     <li>
-                        <a href="#">로그인</a>
+                        <a href="./login.html">로그인</a>
                     </li>
                     <li>
-                        <a href="#">회원가입</a>
+                        <a href="./member.html">회원가입</a>
                     </li>
                     <li>
                         <a href="#">고객센터</a>
@@ -252,7 +253,7 @@
             <div class="motmenu">
                 <ul class="mclb">
                     <li id="signin">
-                        <a href="#">
+                        <a href="./login.html">
                             <img src="./img/배너/m_user.png" alt="유저">
                         </a>
                     </li>
@@ -461,6 +462,65 @@
         </nav>
     </div> <!-- 모바일 GNB -->
 
+
+    <!-- 중앙 -->
+    <main>
+        <div class="member">
+            <div class="memtxt">
+                <span>회원가입</span>
+            </div>
+            <div class="memBox">
+                <div class="memimg">
+                    <img src="./img/상세/member.png" alt="회원가입 사진">
+                </div>
+                <div class="txtmem">
+                    <span>회원정보를 입력해주세요.</span>
+                </div>
+                <div class="input">
+                    <div class="id">
+                        <input id="idtxt" type="text" maxlength="20" placeholder="아이디" required="required">
+                    </div>
+                    <div class="pw">
+                        <input id="pwtxt" type="password" maxlength="20" placeholder="비밀번호" required="required"
+                            autocomplete="off">
+                    </div>
+                    <div class="pwc">
+                        <input id="pwtxt" type="password" maxlength="20" placeholder="비밀번호 확인" required="required"
+                            autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="name">
+                    <strong>이름<span>(필수)</span></strong>
+                </div>
+                <div class="nametxt">
+                    <input class="nt" type="text" required="required">
+                    <div class="user_gender">
+                        <a class="male" href="javascript:void(0);">남</a>
+                        <a class="female " href="javascript:void(0);">여</a>
+                        <input type="hidden" id="gender" name="gender" value="M">
+                    </div>
+                </div>
+                <div class="phone">
+                    <strong>휴대폰<span>(필수)</span></strong>
+                    <img class="icwar" src="./img/상세/icon_war.png" alt="안내창">
+                </div>
+                <div class="phtxt">
+                    <input class="nt" type="text" required="required">
+                </div>
+            </div>
+
+            <p class="lastxt">
+                ＊ 선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.
+            </p>
+
+            <div class="button">
+                <button class="membtn">
+                    <a href="">가입하기</a>
+                </button>
+            </div>
+        </div>
+    </main>
 
     <!-- 하단 -->
     <div id="info">
