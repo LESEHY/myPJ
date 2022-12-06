@@ -196,13 +196,22 @@ $(() => {
         $(".mlif17 .li5 ~li").toggle(200)
     });
 
-    /* 마우스 오버 후 3초 뒤 실행 */
+    /* 마우스 오버 후 2초 뒤 실행 */
     $(window).mouseover(()=>{
         setTimeout(() => {
             $(".cb2Box").addClass("on");
             $(".Box").addClass("on");
             $(".cb2640").addClass("on");
             
+        }, 2000);
+    });
+
+    /* (휴대폰)손가락 닿은 채 움직일 때 2초 뒤 실행 */
+    $(window).touchmove(()=>{
+        setTimeout(() => {
+            $(".cb2Box").addClass("on");
+            $(".Box").addClass("on");
+            $(".cb2640").addClass("on");
         }, 2000);
     });
 
