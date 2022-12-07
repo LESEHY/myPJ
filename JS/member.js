@@ -114,8 +114,14 @@ $(() => {
                 $(this).siblings(".msg").text("일치합니다.").addClass("on");
             } ////////// else : 통과시 ///////////
         } //////////// else if : 비밀번호확인검사 /////////////
+        else {
+            // 메지시 지우기
+            $(this).siblings(".msg").empty();
+            // empty() 내용지우기 메서드
+        } /////// else : 통과시 /////////////
+    }); ////////////////// blur ///////////////////
 
-        /*********************************************************** 
+    /*********************************************************** 
         가입하기(submit) 버튼 클릭시 처리하기
         ___________________________________
 
@@ -128,77 +134,75 @@ $(() => {
         기존 이벤트 blur 이벤트를 강제로 발생시킨다!
         이벤트 강제발생 메서드는? -> trigger(이벤트명)
     ***********************************************************/
-        // 검사용 변수
-        let pass;
+    // 검사용 변수
+    let pass;
 
-        // 이벤트 대상: 서브밋 버튼 -> #btnj
-        // 원래 서브밋 버튼은 클릭 시 싸고 있는 form태그의
-        // action속성에 지정되어 있는 페이지로 현재 페이지의
-        // imput요소들의 값을 가지고 이동하게 되어 있다!
-        // 여기서는 버튼 클릭시 통과 여부 체크를 위해
-        // 이것을 막는다!
-        $("#btnj").click(e => {
-            // 0. 호출확인
-            console.log("가입해");
+    // 이벤트 대상: 서브밋 버튼 -> #btnj
+    // 원래 서브밋 버튼은 클릭 시 싸고 있는 form태그의
+    // action속성에 지정되어 있는 페이지로 현재 페이지의
+    // imput요소들의 값을 가지고 이동하게 되어 있다!
+    // 여기서는 버튼 클릭시 통과 여부 체크를 위해
+    // 이것을 막는다!
+    $("#btnj").click(e => {
+        // 0. 호출확인
+        console.log("가입해");
 
-            // 1. 기본이동막기
-            e.preventDefault();
+        // 1. 기본이동막기
+        e.preventDefault();
 
-            // 2. pass 통과여부 변수에 true를 할당!
-            // 처음에 true로 시작하여 검사 중간에 한번이라도
-            // false로 할당되면 결과는 false다!
-            pass = true;
+        // 2. pass 통과여부 변수에 true를 할당!
+        // 처음에 true로 시작하여 검사 중간에 한번이라도
+        // false로 할당되면 결과는 false다!
+        pass = true;
 
-            // 3. 입력창 blur 이벤트 강제발생시키기!
-            // 대상: 블러 이벤트를 발생했던 요소들!
-            $(`input[type=text][class!=sh][class!=msh][class!=nt],
+        // 3. 입력창 blur 이벤트 강제발생시키기!
+        // 대상: 블러 이벤트를 발생했던 요소들!
+        $(`input[type=text][class!=sh][class!=msh][class!=nt],
             input[type=password]`).trigger("blur");
 
-            // 최종 통과 여부
-            console.log("통과여부: ", pass);
+        // 최종 통과 여부
+        console.log("통과여부: ", pass);
 
-            // 4. 검사결과에 따라 메시지 보이기
-            if (pass) { // 통과시 
-                // 메시지 띄우기
-                alert("회원가입이 정상적으로 처리되었습니다.")
-                // 원래는 post방식으로 DB에 회원정보를 입력 후
-                // DB에 입력완료 시 위의 메시지를 띄워준다!
-            } // if
-            else { // 불통과시
-                alert("입력을 수정하세요!");
-            }
-        }); // click
-    }); // 회원가입
-
-
-    // 남 | 여 클릭
-    const male = $(".male");
-    const female = $(".female");
-
-    male.click(e => {
-        // 1. 기본이동막기(submit버튼의 기본기능)
-        e.preventDefault();
-
-        female.removeClass("on");
-        male.addClass("on");
+        // 4. 검사결과에 따라 메시지 보이기
+        if (pass) { // 통과시 
+            // 메시지 띄우기
+            alert("회원가입이 정상적으로 처리되었습니다.")
+            // 원래는 post방식으로 DB에 회원정보를 입력 후
+            // DB에 입력완료 시 위의 메시지를 띄워준다!
+        } // if
+        else { // 불통과시
+            alert("입력을 수정하세요!");
+        }
     }); // click
 
-    female.click(e => {
-        // 1. 기본이동막기(submit버튼의 기본기능)
-        e.preventDefault();
+// 남 | 여 클릭
+const male = $(".male");
+const female = $(".female");
 
-        male.removeClass("on");
-        female.addClass("on");
-    }); // click
+male.click(e => {
+    // 1. 기본이동막기(submit버튼의 기본기능)
+    e.preventDefault();
 
-    // 안내창 
-    const icwar = $(".icwar");
-    const ictxt = $(".ictxt");
-    const none = $(".none");
+    female.removeClass("on");
+    male.addClass("on");
+}); // click
 
-    icwar.click(() => ictxt.fadeIn(300));
+female.click(e => {
+    // 1. 기본이동막기(submit버튼의 기본기능)
+    e.preventDefault();
 
-    none.click(() => ictxt.fadeOut(300));
+    male.removeClass("on");
+    female.addClass("on");
+}); // click
+
+// 안내창 
+const icwar = $(".icwar");
+const ictxt = $(".ictxt");
+const none = $(".none");
+
+icwar.click(() => ictxt.fadeIn(300));
+
+none.click(() => ictxt.fadeOut(300));
 
 
 }); //JQB
