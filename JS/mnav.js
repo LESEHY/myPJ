@@ -197,7 +197,7 @@ $(() => {
     });
 
     /* 마우스 오버 후 2초 뒤 실행 */
-    $(window).mouseover(()=>{
+    $(window).scroll(()=>{
         setTimeout(() => {
             $(".cb2Box").addClass("on");
             $(".Box").addClass("on");

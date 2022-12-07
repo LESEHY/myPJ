@@ -28,8 +28,6 @@ $(() => {
             if (prot) return; // 나가!
             prot = 1; // 잠금!
             setTimeout(() => (prot = 0), 1200);
-
-
         }
     }); // scroll
 
