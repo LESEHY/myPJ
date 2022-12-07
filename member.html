@@ -474,34 +474,44 @@
                     <span>회원정보를 입력해주세요.</span>
                 </div>
                 <div class="input">
+                    <!-- 아이디 -->
                     <div class="id">
-                        <input id="idtxt" type="text" maxlength="20" placeholder="아이디" required="required">
+                        <label for="idtxt"></label>
+                        <input type="text" name="idtxt" id="idtxt" maxlength="20" placeholder="아이디">
+                        <p class="msg"></p>
                     </div>
+                    <!-- 비밀번호 -->
                     <div class="pw">
-                        <input id="pwtxt" type="password" maxlength="20" placeholder="비밀번호" required="required"
-                            autocomplete="off">
+                        <label for="pwtxt"></label>
+                        <input id="pwtxt" name="pwtxt" type="password" maxlength="20" placeholder="비밀번호">
+                        <p class="msg"></p>
                     </div>
+                    <!-- 비밀번호 확인 -->
                     <div class="pwc">
-                        <input id="pwtxt" type="password" maxlength="20" placeholder="비밀번호 확인" required="required"
-                            autocomplete="off">
+                        <label for="pwctxt"></label>
+                        <input id="pwctxt" name="pwctxt" type="password" maxlength="20" placeholder="비밀번호 확인">
+                        <p class="msg"></p>
                     </div>
                 </div>
 
+                <!-- 이름 -->
                 <div class="name">
                     <strong>이름<span>(필수)</span></strong>
                 </div>
                 <div class="nametxt">
-                    <input class="nt" type="text" required="required">
+                    <label for="nt"></label>
+                    <input class="nt" name="nt" type="text" required="required">
                     <div class="user_gender">
                         <a class="male" href="#">남</a>
                         <a class="female " href="#">여</a>
-                        <input type="hidden" id="gender" name="gender" value="M">
                     </div>
                 </div>
+                <!-- 휴대폰 -->
                 <div class="phone">
                     <strong>휴대폰<span>(필수)</span></strong>
                     <img class="icwar" src="./img/상세/icon_war.png" alt="안내창">
                 </div>
+                <!-- 닫기버튼 아이콘 -->
                 <div class="ictxt">
                     <div class="icX none">
                         <img src="./img/상세/mem_close.png" alt="닫기 버튼">
@@ -515,10 +525,12 @@
                             ＊주요 공지사항 및 이벤트 당첨 안내 등은 수신 동의 여부에 관계없이 발송됩니다.
                         </li>
                     </ul>
+                    <!-- 닫기 버튼 -->
                     <div class="clBox">
                         <button class="clbtn none">닫기</button>
                     </div>
                 </div>
+                <!-- 휴대폰 입력 -->
                 <div class="phtxt">
                     <input class="nt" type="text" required="required">
                 </div>
@@ -528,10 +540,12 @@
                 ＊ 선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.
             </p>
 
+            <!-- 가입하기 -->
             <div class="button">
                 <button class="membtn">
-                    <a href="#">가입하기</a>
+                    <input type="submit" value="가입하기" id="btnj" />
                 </button>
+
             </div>
         </div>
     </main>

@@ -34,15 +34,31 @@
 .pw,
 .pwc {
     padding: 20px 50px;
-    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
 #idtxt,
-#pwtxt {
+#pwtxt,
+#pwctxt{
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
+}
+
+/* 공통 메시지 박스 */
+.msg {
+    line-height: 15px;
+    font-size: 14px;
+    color: #f00;
+    /* 줄바꿈방지 */
+    white-space: nowrap;
+
+    /* outline: 1px solid green; */
+}
+
+/* 메시지 글자색 변경 */
+.msg.on {
+    color: green;
 }
 
 .name {
@@ -129,14 +145,14 @@ strong span {
     border: 1px solid #000;
 }
 
-.icX{
+.icX {
     position: absolute;
     cursor: pointer;
     top: 10px;
     right: 10px;
 }
 
-.ictxt li{
+.ictxt li {
     padding-top: 5px;
 }
 
@@ -151,11 +167,11 @@ strong span {
     font-size: 14px;
 }
 
-.clBox{
+.clBox {
     text-align: center;
 }
 
-.clbtn{
+.clbtn {
     cursor: pointer;
     width: 57px;
     border: 1px solid #222;
@@ -185,12 +201,14 @@ strong span {
 .membtn {
     width: 100%;
     box-sizing: border-box;
-    height: 65px;
     background: #006633;
+    height: 65px;
     border-radius: 3px;
 }
 
-.membtn a {
+#btnj {
+    cursor: pointer;
+    background: #006633;
     display: block;
     font-size: 24px;
     line-height: 63px;

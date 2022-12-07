@@ -197,22 +197,12 @@ $(() => {
     });
 
     /* 마우스 오버 후 2초 뒤 실행 */
-    $(window).scroll(()=>{
+    $(window).scroll(() => {
         setTimeout(() => {
             $(".cb2Box").addClass("on");
             $(".Box").addClass("on");
             $(".cb2640").addClass("on");
-            
+
         }, 2000);
     });
-
-    /* (휴대폰)손가락 닿은 채 움직일 때 2초 뒤 실행 */
-    $(window).touchmove(()=>{
-        setTimeout(() => {
-            $(".cb2Box").addClass("on");
-            $(".Box").addClass("on");
-            $(".cb2640").addClass("on");
-        }, 2000);
-    });
-
 }); // JQB
