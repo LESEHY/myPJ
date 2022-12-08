@@ -537,7 +537,8 @@
                 </div>
                 <!-- 휴대폰 입력 -->
                 <div class="phtxt">
-                    <input id="ph" type="text" oninput="autoHyphen(this)" maxlength="13"required="required">
+                    <input id="ph" type="text" maxlength="13"required="required" oninput="this.value.replace(/[^0123456789-]/g, '');">
+                    <!-- <input id="ph" type="text" maxlength="13"required="required" oninput="this.value = this.value.replace(/[^0123456789-]/g, '');"> -->
                     <p class="msg nmsg"></p>
                 </div>
             </div>
