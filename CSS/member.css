@@ -126,6 +126,10 @@ strong span {
     z-index: 99;
 }
 
+#male:hover, #female{
+    cursor: pointer;
+}
+
 #female{
     opacity: 0;
     position: absolute;
