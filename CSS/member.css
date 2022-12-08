@@ -118,7 +118,7 @@ strong span {
 }
 
 #male{
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
     width: 45%;
     height: 92%;
@@ -127,7 +127,7 @@ strong span {
 }
 
 #female{
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
     width: 45%;
     height: 92%;
@@ -177,6 +177,7 @@ strong span {
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #000;
+    z-index: 1;
 }
 
 .icX {
