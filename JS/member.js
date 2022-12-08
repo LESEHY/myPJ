@@ -114,12 +114,40 @@ $(() => {
                 $(this).siblings(".msg").text("일치합니다.").addClass("on");
             } ////////// else : 통과시 ///////////
         } //////////// else if : 비밀번호확인검사 /////////////
+
+
+        /******************************************************** 
+            7. 휴대폰 유효성 검사
+        ********************************************************/
+        else if (cid === "ph") {
+
+            if (!vReg(cv, cid)) {
+                // 불통과시 if안으로 들어오기!
+                // false일때 들어오려면 !(NOT)연산자로 결과 뒤집기함!
+                // 메시지 띄우기
+                $(this)
+                    .siblings(".msg")
+                    .text("휴대폰번호가 올바르지 않습니다.");
+
+                // 불통과!
+                pass = false;
+            } ///////// if : 불통과시 //////////
+            else {
+                // 검사결과가 통과시 /////
+                // 메시지 지우기
+                $(this).siblings(".msg").empty();
+            } ////////// else : 통과시 ///////////
+
+
+        } //////////// else if : 휴대폰 검사 ////////////////
         else {
             // 메지시 지우기
             $(this).siblings(".msg").empty();
             // empty() 내용지우기 메서드
         } /////// else : 통과시 /////////////
+
     }); ////////////////// blur ///////////////////
+
 
 
     /*********************************************************** 
@@ -176,34 +204,33 @@ $(() => {
         }
     }); // click
 
-// 남 | 여 클릭
-const male = $(".male");
-const female = $(".female");
+    // 남 | 여 클릭
+    const male = $("#male");
+    const female = $("#female");
 
-male.click(e => {
-    // 1. 기본이동막기(submit버튼의 기본기능)
-    e.preventDefault();
+    male.click(e => {
+        $(".female").removeClass("on");
+        $(".male").addClass("on");
+    }); // click
 
-    female.removeClass("on");
-    male.addClass("on");
-}); // click
+    female.click(e => {
+        $(".male").removeClass("on");
+        $(".female").addClass("on");
+    }); // click
 
-female.click(e => {
-    // 1. 기본이동막기(submit버튼의 기본기능)
-    e.preventDefault();
+    $(".user_gender a").click(e => {
+        // 1. 기본이동막기
+        e.preventDefault();
+    });
 
-    male.removeClass("on");
-    female.addClass("on");
-}); // click
+    // 안내창 
+    const icwar = $(".icwar");
+    const ictxt = $(".ictxt");
+    const none = $(".none");
 
-// 안내창 
-const icwar = $(".icwar");
-const ictxt = $(".ictxt");
-const none = $(".none");
+    icwar.click(() => ictxt.fadeIn(300));
 
-icwar.click(() => ictxt.fadeIn(300));
-
-none.click(() => ictxt.fadeOut(300));
+    none.click(() => ictxt.fadeOut(300));
 
 
 }); //JQB
@@ -247,11 +274,14 @@ function vReg(val, cid) {
             // (?=.*[a-zA-Z]) 영문자 대문자 또는 소문자 사용체크!
             // (?=.*[!@#$%^&+=]) 특수문자 사용체크!
             break;
-    } //////////// switch case문 //////////////////
 
-    // //console.log("정규식:"+reg);
+        case "ph":
+            reg = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+} //////////// switch case문 //////////////////
 
-    // 정규식 검사를 위한 JS메서드
-    // -> 정규식.test(검사할값) : 결과 true/false
-    return reg.test(val); //호출한 곳으로 검사결과리턴!
+// //console.log("정규식:"+reg);
+
+// 정규식 검사를 위한 JS메서드
+// -> 정규식.test(검사할값) : 결과 true/false
+return reg.test(val); //호출한 곳으로 검사결과리턴!
 } //////////// vReg 함수 //////////////////////////////////

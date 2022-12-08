@@ -501,11 +501,15 @@
                 </div>
                 <div class="nametxt">
                     <label for="nt"></label>
-                    <input class="nt" name="nt" type="text" required="required">
+                    <input type="text" id="nt" name="nt" required="required">
+                    <!-- 성별 -->
                     <div class="user_gender">
                         <a class="male" href="#">남</a>
+                        <input type="radio" name="gen" id="male" />
                         <a class="female " href="#">여</a>
+                        <input type="radio" name="gen" id="female" />
                     </div>
+                    <p class="msg nmsg"></p>
                 </div>
                 <!-- 휴대폰 -->
                 <div class="phone">
@@ -533,7 +537,8 @@
                 </div>
                 <!-- 휴대폰 입력 -->
                 <div class="phtxt">
-                    <input class="nt" type="text" required="required">
+                    <input id="ph" type="text" oninput="autoHyphen(this)" maxlength="13"required="required">
+                    <p class="msg nmsg"></p>
                 </div>
             </div>
 

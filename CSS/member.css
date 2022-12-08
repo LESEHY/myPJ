@@ -72,11 +72,11 @@ strong span {
 
 .nametxt {
     display: flex;
-    padding: 0px 20px 20px;
+    padding: 0px 20px 40px;
     border-bottom: 1px solid #ddd;
 }
 
-.nt {
+#nt {
     background: #f4f4f2;
     border: 1px solid #ddd;
     box-sizing: border-box;
@@ -87,6 +87,7 @@ strong span {
 }
 
 .user_gender {
+    position: relative;
     border: 1px solid #b0b0b0;
     border-radius: 3px;
     float: left;
@@ -117,6 +118,29 @@ strong span {
     font-size: 16px;
 }
 
+#male{
+    /* opacity: 0; */
+    position: absolute;
+    width: 45%;
+    height: 92%;
+    left: 0;
+    z-index: 99;
+}
+
+#female{
+    /* opacity: 0; */
+    position: absolute;
+    width: 45%;
+    height: 92%;
+    right: 0;
+    z-index: 99;
+}
+
+.nmsg{
+    position: absolute;
+    margin-top: 60px;
+}
+
 .phone {
     padding: 20px;
     font-size: 18px;
@@ -124,8 +148,18 @@ strong span {
 
 .phtxt {
     display: flex;
-    padding: 0px 20px 20px;
+    padding: 0px 20px 40px;
     border-bottom: 1px solid #ddd;
+}
+
+#ph {
+    background: #f4f4f2;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 14px;
+    width: 49%;
 }
 
 .icwar {
