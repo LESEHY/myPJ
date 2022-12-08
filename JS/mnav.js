@@ -1,31 +1,31 @@
 // mnav.js
 $(() => {
+    const map = $("#map");
     const ham = $("#ham");
-    const idtop = $("#top");
-    const ct = $(".ct");
+    const mbox = $(".mbox");
+    const mgnbBox = $(".mgnbBox");
     const close = $(".close");
 
     let prot = 0; // 0-허용, 1-불허용
 
-    ham.click(() => {
-        idtop.css({
-                opacity: "0.4",
-            }),
-            ct.css({
-                opacity: "0.3",
-            }),
-            $(".mgnbBox").show(300)
+    map.click(()=>{
+        alert("준비 중입니다");
     });
 
+    ham.click(() => {
+        mbox.css({
+            opacity: "0.7",
+        }); // css
+        mbox.show(300);
+        mgnbBox.show(300);
+        close.show(300);
+    }); // click
+
     close.click(() => {
-        idtop.css({
-                opacity: "1",
-            }),
-            ct.css({
-                opacity: "1",
-            }),
-            $(".mgnbBox").hide(300)
-    });
+        mbox.hide(300);
+        mgnbBox.hide(300);
+        close.hide(100);
+    });//click
 
     /* MENU 클릭하면 하위 나옴 */
     $(".msm a:contains('MENU')").click(() => {

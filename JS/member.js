@@ -2,7 +2,7 @@
 
 $(() => {
 
-    $(`input[type=text][class!=sh][class!=msh][class!=nt],
+    $(`input[type=text][class!=sh][class!=msh],
     input[type=password]`).blur(function () {
 
         // 모든 공백 제거
@@ -121,6 +121,7 @@ $(() => {
         } /////// else : 통과시 /////////////
     }); ////////////////// blur ///////////////////
 
+
     /*********************************************************** 
         가입하기(submit) 버튼 클릭시 처리하기
         ___________________________________
@@ -157,7 +158,7 @@ $(() => {
 
         // 3. 입력창 blur 이벤트 강제발생시키기!
         // 대상: 블러 이벤트를 발생했던 요소들!
-        $(`input[type=text][class!=sh][class!=msh][class!=nt],
+        $(`input[type=text][class!=sh][class!=msh],
             input[type=password]`).trigger("blur");
 
         // 최종 통과 여부
