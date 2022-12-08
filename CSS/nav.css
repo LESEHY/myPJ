@@ -98,7 +98,8 @@
     font-size: 12px;
     line-height: 35px;
     padding: 0px 1vw;
-    width: 166px;
+
+    /* width: 250px; */
     text-align: left;
     transform: translateX(60%);
 }
