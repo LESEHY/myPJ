@@ -48,7 +48,6 @@ $(() => {
     setInterval(noticeAuto,3000);
 
     
-    
 
 
 }); // JQB

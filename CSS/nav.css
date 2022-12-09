@@ -74,20 +74,26 @@
 /* 서브메뉴 */
 .smenu {
     position: absolute;
-    display: flex;
     left: 50%;
     transform: translateX(-50%);
-    height: 0;
-    overflow: hidden;
+    /* height: 0; */
+    /* overflow: hidden; */
     background-color: #2c2a29;
+    display: none;
+}
+
+.swrap{    
+    position: relative;
+    left: 50%;
+    transform: translateX(-437px);
+    display: flex;
 }
 
 /* GNB 오버 시 메뉴 보임 */
 .sm:hover .smenu {
-    height: auto;
-    padding: 10px 0px;
+    display: block;
+    padding: 3vw 0px;
     width: 100%;
-
 }
 
 /* 서브메뉴 a */
@@ -110,11 +116,12 @@
 
 .smenu ol{
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    padding: 0 3vw;
 }
 
 .smenu ol:first-child{
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 
 

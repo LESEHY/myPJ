@@ -33,44 +33,54 @@ $(() => {
         if (prot) return; // 나가!
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
-        $(".li1").toggle(300);
+        $(".li1").slideToggle(300);
         $("ol .li1 ~li").hide();
     });
 
-    $(".mlif1>li").click(() => {
+    $(".msmenu>ol>li:first-child").click(function(){
         if (prot) return; // 나가!
         prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif1 .li1 ~li").toggle(200)
+        setTimeout(() => (prot = 0), 200);        
+        $(this).nextAll().slideToggle(200)
+        .parent().siblings()
+        .find("li:first-child~li").slideUp(200);
+        // console.log(this);
     });
 
-    $(".mlif2>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif2 .li1 ~li").toggle(200)
-    });
+    // $(".mlif1>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif1 .li1 ~li").toggle(200)
+    // });
 
-    $(".mlif3>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif2 .li1 ~li").toggle(200)
-    });
+    // $(".mlif2>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif2 .li1 ~li").toggle(200)
+    // });
 
-    $(".mlif4>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif4 .li1 ~li").toggle(200)
-    });
+    // $(".mlif3>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif2 .li1 ~li").toggle(200)
+    // });
 
-    $(".mlif5>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif5 .li1 ~li").toggle(200)
-    });
+    // $(".mlif4>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif4 .li1 ~li").toggle(200)
+    // });
+
+    // $(".mlif5>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif5 .li1 ~li").toggle(200)
+    // });
 
     /* STORE 클릭하면 하위 나옴 */
     $(".msm a:contains('STORE')").click(() => {
