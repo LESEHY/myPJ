@@ -26,6 +26,18 @@
         font-size: 17px;
     }
 
+    .mbtn {
+        transform: translate(13vw, 5vw);
+    }
+
+    .mbtn2 {
+        transform: translate(13vw, 5vw);
+    }
+
+    .mbtn3 {
+        transform: translate(22vw, 5vw);
+    }
+
     .youtubeBox {
         height: 310px;
     }
@@ -78,6 +90,18 @@
 
     .gnb>ul>li>a {
         font-size: 15px;
+    }
+
+    .mbtn {
+        transform: translate(12vw, 5vw);
+    }
+
+    .mbtn2 {
+        transform: translate(12vw, 5vw);
+    }
+
+    .mbtn3 {
+        transform: translate(21vw, 5vw);
     }
 
     .notice_tit {

@@ -218,63 +218,49 @@ body {
 .mtit,
 .mtit2,
 .mtit3,
-.mtit4,
-.madr1,
-.madr2,
-.madr3,
-.madr4,
-.madr5,
-.madr6,
-.mbtn,
-.mbtn2,
-.mbtn3 {
+.mtit4{
     position: absolute;
     top: 50%;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(10vw, -70%);
 }
 
 
 /* 배너 타이틀 */
 .mtit {
-    align-items: center;
-    flex-direction: column;
-    transform: translate(10vw, -70%);
     width: 16.7%;
 }
 
 .mtit2 {
-    align-items: center;
-    flex-direction: column;
-    transform: translate(10vw, -70%);
     width: 17.5%;
 }
 
 .mtit3 {
-    align-items: center;
-    flex-direction: column;
-    transform: translate(10vw, -70%);
     width: 26.2%;
 }
 
 .mtit4 {
-    align-items: center;
-    flex-direction: column;
-    transform: translate(10vw, -70%);
     width: 26.4%;
 }
 
 /******************************** 배너 버튼 공통********************************/
+
+
 .mbtn,
 .mbtn2,
 .mbtn3 {
-    width: 6.8%;
-    height: 6.2%;
+    position: absolute;
+    top: 50%;
+    width: 130px;
+    height: 40px;
     background: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    font-size: .9vw;
+    font-size: 16px;
     transition: .5s;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 /* 배너 버튼 1 */
@@ -322,6 +308,18 @@ body {
 /* 배너 버튼 오버 3*/
 .mbtn3:hover {
     background-color: #b9813d;
+}
+
+
+/*************************** 음료 ***************************/
+.madr1,
+.madr2,
+.madr3,
+.madr4,
+.madr5,
+.madr6{
+    position: absolute;
+    top: 50%;
 }
 
 /* 배너 음료 1 */
