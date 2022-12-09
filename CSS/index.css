@@ -272,50 +272,29 @@ body {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    font-size: .9vw;
+    transition: .5s;
+    line-height: 2;
 }
 
 /* 배너 버튼 1 */
 .mbtn {
     border: 2px solid #fff;
     transform: translate(15vw, 5vw);
+    color: white;
 }
 
 /* 배너 버튼 2 */
 .mbtn2 {
     border: 2px solid #1e3932;
     transform: translate(15vw, 5vw);
+    color: #1e3932;
 }
 
 /* 배너 버튼 3 */
 .mbtn3 {
     border: 2px solid #b9813d;
     transform: translate(23.5vw, 5vw);
-}
-
-/**************************** 배너 버튼 텍스트 공통 ****************************/
-.mbtn a,
-.mbtn2 a,
-.mbtn3 a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-top: 4%;
-    font-size: .9vw;
-    transition: .5s;
-}
-
-/* 배너 버튼 텍스트 1*/
-.mbtn a {
-    color: white;
-}
-
-/* 배너 버튼 텍스트 2*/
-.mbtn2 a {
-    color: #1e3932;
-}
-
-/* 배너 버튼 텍스트 3*/
-.mbtn3 a {
     color: #b9813d;
 }
 
@@ -324,46 +303,26 @@ body {
 .mbtn2:hover,
 .mbtn3:hover {
     transition: .5s;
+    text-decoration: underline;
+    color: white;
 }
 
 /* 배너 버튼 오버 1*/
 .mbtn:hover {
     background-color: white;
+    color: black;
 }
 
 /* 배너 버튼 오버 2*/
 .mbtn2:hover {
     background-color: #1e3932;
+
 }
 
 /* 배너 버튼 오버 3*/
 .mbtn3:hover {
     background-color: #b9813d;
 }
-
-/****************************** 배너 버튼 오버시 a 공통 ******************************/
-.mbtn:hover a,
-.mbtn2:hover a,
-.mbtn3:hover a {
-    text-decoration: underline;
-    transition: .5s;
-}
-
-/* 배너 버튼 오버시 a 1 */
-.mbtn:hover a {
-    color: black;
-}
-
-/* 배너 버튼 오버시 a 2*/
-.mbtn2:hover a {
-    color: white;
-}
-
-/* 배너 버튼 오버시 a 3*/
-.mbtn3:hover a {
-    color: white;
-}
-
 
 /* 배너 음료 1 */
 .madr1 {
@@ -546,28 +505,21 @@ body {
     cursor: pointer;
     border: 2px solid #c4302b;
     transform: translate(80%);
-}
-
-.ytbt a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
     color: #c4302b;
     font-weight: bold;
     font-size: 24px;
+    text-align: center;
+    line-height: 3;
 }
+
 
 .ytbt:hover {
     transition: .5s;
     background-color: #c4302b;
-}
-
-.ytbt:hover a {
     text-decoration: underline;
     color: #fff;
-    transition: .5s;
 }
+
 
 /* 유튜브 영상 박스 */
 .ytvideo {
@@ -738,25 +690,17 @@ body {
     line-height: 34px;
     font-size: 15px;
     text-align: center;
-}
-
-.mmbtn a {
-    display: block;
-    width: 100%;
-    height: 100%;
     color: #fff;
     box-sizing: border-box;
 }
 
 .mmbtn:hover {
     background-color: white;
-}
-
-.mmbtn:hover a {
     transition: .5s;
     text-decoration: underline;
     color: #000;
 }
+
 
 
 /****************************************************************************/
@@ -846,14 +790,17 @@ body {
     line-height: 34px;
     font-size: 15px;
     text-align: center;
-}
-
-.mobtn a {
-    display: block;
-    width: 100%;
-    height: 100%;
     color: #fff;
     box-sizing: border-box;
+}
+
+.mobtn:hover,
+.mobtn2:hover {
+    text-decoration: underline;
+    transition: .5s;
+    color: black;
+    background-color: #fff;
+    transition: .5s;
 }
 
 .mob2 {
@@ -877,30 +824,10 @@ body {
     background: none;
     border: 2px solid #fff;
     border-radius: 5px;
-    line-height: 34px;
+    line-height: 40px;
     font-size: 15px;
     text-align: center;
-}
-
-.mobtn2 a {
-    display: block;
-    width: 100%;
-    height: 100%;
     color: #fff;
-    box-sizing: border-box;
-}
-
-.mobtn:hover,
-.mobtn2:hover {
-    background-color: #fff;
-    transition: .5s;
-}
-
-.mobtn:hover a,
-.mobtn2:hover a {
-    text-decoration: underline;
-    transition: .5s;
-    color: black;
 }
 
 /*  모바일(640px이하)용 배너 1 */
@@ -963,31 +890,19 @@ body {
     background: none;
     border: 2px solid #fff;
     border-radius: 5px;
-    line-height: 34px;
+    line-height: 40px;
     font-size: 15px;
     text-align: center;
+    color: #fff;
 }
 
-.mbtn640 a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    box-sizing: border-box;
-}
 
 .mbtn640:hover {
     background-color: #fff;
     transition: .5s;
-}
-
-.mbtn640:hover a {
     text-decoration: underline;
-    transition: .5s;
     color: black;
 }
-
-
 
 
 /***************************** 하단  *****************************/
@@ -1076,18 +991,16 @@ body {
     border: 2px solid #fff;
     margin: 10px 5px;
     padding: 0 10px;
-    width: 115px;
+    width: 110px;
     height: 35px;
     border-radius: 3px;
-}
-
-/* 버튼 a */
-.btns a {
-    font-size: 12px;
+    font-size: 13px;
     color: #fff;
+    line-height: 2.5;
 }
 
-.btns:hover a {
+
+.btns:hover{
     text-decoration: underline;
 }
 
