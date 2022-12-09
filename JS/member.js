@@ -148,12 +148,12 @@ $(() => {
     }); ////////////////// blur ///////////////////
 
     // 휴대폰 타이핑 시에 특정 자리수 마다 하이픈 넣기
-    $("#ph").on("keyup",function(){
+    $("#ph").on("keyup", function () {
         let intxt = $(this).val();
         let tcnt = intxt.length;
-        console.log("입력:",intxt,"/",tcnt);
+        // console.log("입력:",intxt,"/",tcnt);
 
-        if(tcnt==3 || tcnt == 8) $(this).val(intxt+"-");
+        if (tcnt == 3 || tcnt == 8) $(this).val(intxt + "-");
     }); //////////// keyup //////////////////////
 
     /*********************************************************** 

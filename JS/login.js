@@ -12,7 +12,7 @@ $(() => {
     let pwtxt = $('#pwtxt');
 
     // 로그인 버튼 클릭시
-    $('.logbtn a').click(e => {
+    $('.logbtn').click(e => {
         // 1. 기본이동막기(submit버튼의 기본기능)
         e.preventDefault();
 
