@@ -522,13 +522,10 @@
     }
 
     .logbtn {
-        height: 45px;
+        font-size: 20px;
+        line-height: 2.25;
     }
 
-    .logbtn a {
-        font-size: 20px;
-        line-height: 43px;
-    }
 
     .war {
         max-width: 345px;
