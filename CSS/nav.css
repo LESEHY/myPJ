@@ -82,7 +82,7 @@
     display: none;
 }
 
-.swrap{    
+.swrap {
     position: relative;
     left: 50%;
     transform: translateX(-550px);
@@ -114,17 +114,8 @@
 
 }
 
-.smenu ol{
+.smenu ol {
     text-align: center;
     /* margin: 0 auto; */
     padding: 0 3vw;
 }
-
-.smenu ol:first-child{
-    /* margin-left: 250px; */
-}
-
-
-
-
-

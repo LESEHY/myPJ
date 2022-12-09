@@ -8,7 +8,7 @@ $(() => {
 
     let prot = 0; // 0-허용, 1-불허용
 
-    map.click(()=>{
+    map.click(() => {
         alert("준비 중입니다");
     });
 
@@ -25,7 +25,7 @@ $(() => {
         mbox.hide(300);
         mgnbBox.hide(300);
         close.hide(100);
-    });//click
+    }); //click
 
     /* MENU 클릭하면 하위 나옴 */
     $(".msm a:contains('MENU')").click(() => {
@@ -37,13 +37,13 @@ $(() => {
         $("ol .li1 ~li").hide();
     });
 
-    $(".msmenu>ol>li:first-child").click(function(){
+    $(".msmenu>ol>li:first-child").click(function () {
         if (prot) return; // 나가!
         prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);        
+        setTimeout(() => (prot = 0), 200);
         $(this).nextAll().slideToggle(200)
-        .parent().siblings()
-        .find("li:first-child~li").slideUp(200);
+            .parent().siblings()
+            .find("li:first-child~li").slideUp(200);
         // console.log(this);
     });
 
@@ -87,10 +87,10 @@ $(() => {
         $(".li5 ~li").hide()
     });
 
-  
 
 
-    
+
+
     /* 모바일용 배너 마우스 오버 후 2초 뒤 실행 */
     $(window).scroll(() => {
         setTimeout(() => {

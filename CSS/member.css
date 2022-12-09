@@ -38,7 +38,7 @@
 
 #idtxt,
 #pwtxt,
-#pwctxt{
+#pwctxt {
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
@@ -117,7 +117,7 @@ strong span {
     font-size: 16px;
 }
 
-#male{
+#male {
     opacity: 0;
     position: absolute;
     width: 45%;
@@ -126,11 +126,12 @@ strong span {
     z-index: 99;
 }
 
-#male:hover, #female{
+#male:hover,
+#female {
     cursor: pointer;
 }
 
-#female{
+#female {
     opacity: 0;
     position: absolute;
     width: 45%;
@@ -139,7 +140,7 @@ strong span {
     z-index: 99;
 }
 
-.nmsg{
+.nmsg {
     position: absolute;
     margin-top: 60px;
 }
@@ -195,7 +196,7 @@ strong span {
     padding-top: 5px;
 }
 
-.ictxt li:first-child{
+.ictxt li:first-child {
     font-size: 16px;
     font-weight: bold;
 }

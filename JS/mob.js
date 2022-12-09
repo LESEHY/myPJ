@@ -10,13 +10,13 @@ $(() => {
             // when window width is >= 200px
             200: { // 200픽셀보다 클 경우
                 slidesPerView: 2, // 나오는 이미지 수
-                
+
             },
             // when window width is >= 700px
             600: {
                 slidesPerView: 3,
             },
-        
+
         },
         coverflowEffect: {
             rotate: 50,
