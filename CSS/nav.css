@@ -112,9 +112,11 @@
     text-align: center;
     margin: 0 auto;
 }
-.smenu li{
-    /* margin: 0 50px; */
+
+.smenu ol:first-child{
+    margin-left: 250px;
 }
+
 
 
 
