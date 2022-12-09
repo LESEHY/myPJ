@@ -17,6 +17,10 @@
         right: 14%;
     }
 
+    .swrap {
+        transform: translateX(-500px);
+    }
+
 
     .gnb>ul>li>a {
         font-size: 17px;
@@ -473,7 +477,7 @@
         display: block;
     }
 
-    .close img{
+    .close img {
         width: 20px;
         height: 20px;
     }

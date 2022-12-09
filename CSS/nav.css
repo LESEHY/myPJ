@@ -85,14 +85,14 @@
 .swrap{    
     position: relative;
     left: 50%;
-    transform: translateX(-437px);
+    transform: translateX(-550px);
     display: flex;
 }
 
 /* GNB 오버 시 메뉴 보임 */
 .sm:hover .smenu {
     display: block;
-    padding: 3vw 0px;
+    padding: 12px 0px;
     width: 100%;
 }
 

@@ -47,63 +47,14 @@ $(() => {
         // console.log(this);
     });
 
-    // $(".mlif1>li").click(() => {
-    //     if (prot) return; // 나가!
-    //     prot = 1; // 잠금!
-    //     setTimeout(() => (prot = 0), 200);
-    //     $(".mlif1 .li1 ~li").toggle(200)
-    // });
-
-    // $(".mlif2>li").click(() => {
-    //     if (prot) return; // 나가!
-    //     prot = 1; // 잠금!
-    //     setTimeout(() => (prot = 0), 200);
-    //     $(".mlif2 .li1 ~li").toggle(200)
-    // });
-
-    // $(".mlif3>li").click(() => {
-    //     if (prot) return; // 나가!
-    //     prot = 1; // 잠금!
-    //     setTimeout(() => (prot = 0), 200);
-    //     $(".mlif2 .li1 ~li").toggle(200)
-    // });
-
-    // $(".mlif4>li").click(() => {
-    //     if (prot) return; // 나가!
-    //     prot = 1; // 잠금!
-    //     setTimeout(() => (prot = 0), 200);
-    //     $(".mlif4 .li1 ~li").toggle(200)
-    // });
-
-    // $(".mlif5>li").click(() => {
-    //     if (prot) return; // 나가!
-    //     prot = 1; // 잠금!
-    //     setTimeout(() => (prot = 0), 200);
-    //     $(".mlif5 .li1 ~li").toggle(200)
-    // });
-
     /* STORE 클릭하면 하위 나옴 */
     $(".msm a:contains('STORE')").click(() => {
         // toggle() 보이면 안보이게, 안보이면 보이게
         if (prot) return; // 나가!
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
-        $(".li2").toggle(300);
+        $(".li2").slideToggle(300);
         $(".li2 ~li").hide()
-    });
-
-    $(".mlif6>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif6 .li2 ~li").toggle(200)
-    });
-
-    $(".mlif7>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif7 .li2 ~li").toggle(200)
     });
 
     /* RESPONSIBILITY 클릭하면 하위 나옴 */
@@ -112,36 +63,8 @@ $(() => {
         if (prot) return; // 나가!
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
-        $(".li3").toggle(300);
+        $(".li3").slideToggle(300);
         $(".li3 ~li").hide()
-    });
-
-    $(".mlif8>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif8 .li3 ~li").toggle(200)
-    });
-
-    $(".mlif9>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif9 .li3 ~li").toggle(200)
-    });
-
-    $(".mlif10>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif10 .li3 ~li").toggle(200)
-    });
-
-    $(".mlif11>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif11 .li3 ~li").toggle(200)
     });
 
     /* STARBUCKS REWARDS 클릭하면 하위 나옴 */
@@ -150,29 +73,8 @@ $(() => {
         if (prot) return; // 나가!
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
-        $(".li4").toggle(300);
+        $(".li4").slideToggle(300);
         $(".li4 ~li").hide()
-    });
-
-    $(".mlif12>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif12 .li4 ~li").toggle(200)
-    });
-
-    $(".mlif13>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif13 .li4 ~li").toggle(200)
-    });
-
-    $(".mlif14>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif14 .li4 ~li").toggle(200)
     });
 
     /* WHAT'S NEW 클릭하면 하위 나옴 */
@@ -181,32 +83,15 @@ $(() => {
         if (prot) return; // 나가!
         prot = 1; // 잠금!
         setTimeout(() => (prot = 0), 200);
-        $(".li5").toggle(350);
+        $(".li5").slideToggle(350);
         $(".li5 ~li").hide()
     });
 
-    $(".mlif15>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif15 .li5 ~li").toggle(200)
-    });
+  
 
-    $(".mlif16>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif16 .li5 ~li").toggle(200)
-    });
 
-    $(".mlif17>li").click(() => {
-        if (prot) return; // 나가!
-        prot = 1; // 잠금!
-        setTimeout(() => (prot = 0), 200);
-        $(".mlif17 .li5 ~li").toggle(200)
-    });
-
-    /* 마우스 오버 후 2초 뒤 실행 */
+    
+    /* 모바일용 배너 마우스 오버 후 2초 뒤 실행 */
     $(window).scroll(() => {
         setTimeout(() => {
             $(".cb2Box").addClass("on");

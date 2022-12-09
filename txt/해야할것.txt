@@ -8,3 +8,38 @@ mnav.js 코드 줄이기
 
 
 
+    // $(".mlif1>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif1 .li1 ~li").toggle(200)
+    // });
+
+    // $(".mlif2>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif2 .li1 ~li").toggle(200)
+    // });
+
+    // $(".mlif3>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif2 .li1 ~li").toggle(200)
+    // });
+
+    // $(".mlif4>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif4 .li1 ~li").toggle(200)
+    // });
+
+    // $(".mlif5>li").click(() => {
+    //     if (prot) return; // 나가!
+    //     prot = 1; // 잠금!
+    //     setTimeout(() => (prot = 0), 200);
+    //     $(".mlif5 .li1 ~li").toggle(200)
+    // });
+
